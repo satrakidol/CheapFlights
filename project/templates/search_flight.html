@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<style>
+    .bigger-form {
+        font-size: x-large; 
+    }
+
+    .bigger-form input[type="text"],
+    .bigger-form input[type="submit"] {
+        font-size: large; 
+    }
+</style>
+
+<form action="{{ request.path }}" method="post" class="bigger-form">
+    <label for="departure">Departure</label>
+    <input type="text" name="departure" placeholder="Departure" /><br>
+    <label for="destination">Destination</label>
+    <input type="text" name="destination" placeholder="Destination" /><br>
+    <label for="begin_date">Begin Date</label>
+    <input type="text" name="begin_date" placeholder="Begin Date" /><br>
+    <label for="return_date">Return Date</label>
+    <input type="text" name="return_date" placeholder="Return Date" /><br>
+    <input type="submit" value="Submit" />
+</form>
+
+
+{% endblock %}

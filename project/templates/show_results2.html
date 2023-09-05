@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flight Search Results</title>
+    <style>
+        li {
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flight Search Results</h1>
+    <table>
+    <tr>
+        <th>Outgoing</th>
+        <th>Return</th>
+    </tr>
+    <tr>
+        <td>    
+    {% if flight_data %}
+        <ul>
+        {% for offer in flight_data %}
+            <li>
+                <strong>Company:</strong> {{ offer['itineraries'][0]['segments'][0]['carrierCode'] }}<br>
+                <strong>Price:</strong> {{ offer['price']['total'] }} {{ offer['price']['currency'] }}<br>
+                <strong>Duration:</strong> {{ offer['itineraries'][0]['duration'] | duration_formatter }}<br>
+                <strong>Departure Airport:</strong> {{ offer['itineraries'][0]['segments'][0]['departure']['iataCode'] }}<br>
+                <strong>Departure Time:</strong> {{ offer['itineraries'][0]['segments'][0]['departure']['at']|format_datetime }}<br>
+                <strong>Arrival Airport:</strong> {{ offer['itineraries'][0]['segments'][-1]['arrival']['iataCode'] }}<br>
+                <strong>Arrival Time:</strong> {{ offer['itineraries'][0]['segments'][-1]['arrival']['at']|format_datetime }}<br>
+                <strong>Number of Stops:</strong> {{ offer['itineraries'][0]['segments'][0]['numberOfStops'] }}<br>
+                <strong>Instant Ticketing Required:</strong> {{ offer['instantTicketingRequired'] }}<br>
+                <strong>Number of Bookable Seats:</strong> {{ offer['numberOfBookableSeats'] }}<br>
+                <strong>Non-Homogeneous:</strong> {{ offer['nonHomogeneous'] }}<br>
+                <strong>One Way:</strong> {{ offer['oneWay'] }}<br>
+                <strong>Last Ticketing Date:</strong> {{ offer['lastTicketingDate'] }}<br>
+                <strong>Validating Airline Codes:</strong> {{ offer['validatingAirlineCodes']|join(', ') }}
+            </li>
+            <hr>
+        {% endfor %}
+        </ul></td>
+
+        <td>    
+    {% if flight_data %}
+        <ul>
+        {% for offer in flight_data_return %}
+            <li>
+                <strong>Company:</strong> {{ offer['itineraries'][0]['segments'][0]['carrierCode'] }}<br>
+                <strong>Price:</strong> {{ offer['price']['total'] }} {{ offer['price']['currency'] }}<br>
+                <strong>Duration:</strong> {{ offer['itineraries'][0]['duration'] | duration_formatter }}<br>
+                <strong>Departure Airport:</strong> {{ offer['itineraries'][0]['segments'][0]['departure']['iataCode'] }}<br>
+                <strong>Departure Time:</strong> {{ offer['itineraries'][0]['segments'][0]['departure']['at']|format_datetime }}<br>
+                <strong>Arrival Airport:</strong> {{ offer['itineraries'][0]['segments'][-1]['arrival']['iataCode'] }}<br>
+                <strong>Arrival Time:</strong> {{ offer['itineraries'][0]['segments'][-1]['arrival']['at']|format_datetime }}<br>
+                <strong>Number of Stops:</strong> {{ offer['itineraries'][0]['segments'][0]['numberOfStops'] }}<br>
+                <strong>Instant Ticketing Required:</strong> {{ offer['instantTicketingRequired'] }}<br>
+                <strong>Number of Bookable Seats:</strong> {{ offer['numberOfBookableSeats'] }}<br>
+                <strong>Non-Homogeneous:</strong> {{ offer['nonHomogeneous'] }}<br>
+                <strong>One Way:</strong> {{ offer['oneWay'] }}<br>
+                <strong>Last Ticketing Date:</strong> {{ offer['lastTicketingDate'] }}<br>
+                <strong>Validating Airline Codes:</strong> {{ offer['validatingAirlineCodes']|join(', ') }}
+            </li>
+            <hr>
+        {% endfor %}
+        {% endif %}
+        </ul></td>
+    </tr>
+</table>
+    {% else %}
+        <p>{{ error }}</p>
+    {% endif %}
+</body>
+</html>

@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+    /* Table */
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      max-width: 800px;
+      margin: 20px auto;
+      background-color: #f8f8f8;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+  
+    /* Table Header */
+    th {
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    padding: 10px 20px;
+    text-align: left;
+    border-bottom: 2px solid #444;
+  }
+  
+    /* Table Rows */
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+  
+    li:hover {
+      background-color: #fefcfc;
+      font-size: large;
+    }
+  
+    /* Table Data Cells */
+    td {
+      padding: 10px 20px;
+      border-bottom: 1px solid #ddd;
+      color: #333;
+    }
+  </style>
+    <h1 style="font-size: x-large; font-weight: bold;">Flight Search Results</h1>
+    <table>
+        <tr>
+            <th style="color: white; text-align: center;">Outgoing</th>
+            <th style="color: white; text-align: center;">Return</th>
+
+        </tr>
+        <tr>
+            <td>    
+        {% if flight_data %}
+            <ul>
+            {% for offer in flight_data %}
+                <li>
+                    
+                    <strong>Company:</strong> {{ offer['itineraries'][0]['segments'][0]['carrierCode'] }}<br>
+                    <strong>Company (Name):</strong> {{ airline2 }}<br>
+                    <strong>Price:</strong> {{ offer['price']['total'] }} {{ offer['price']['currency'] }}<br>
+                    <strong>Duration:</strong> {{ offer['itineraries'][0]['duration'] | duration_formatter }}<br>
+                    <strong>Departure Airport:</strong> {{ offer['itineraries'][0]['segments'][0]['departure']['iataCode'] }}<br>
+                    <strong>Departure Time:</strong> {{ offer['itineraries'][0]['segments'][0]['departure']['at']|format_datetime }}<br>
+                    <strong>Arrival Airport:</strong> {{ offer['itineraries'][0]['segments'][-1]['arrival']['iataCode'] }}<br>
+                    <strong>Arrival Time:</strong> {{ offer['itineraries'][0]['segments'][-1]['arrival']['at']|format_datetime }}<br>
+                    <strong>Number of Stops:</strong> {{ offer['itineraries'][0]['segments'][0]['numberOfStops'] }}<br>
+                    <strong>Instant Ticketing Required:</strong> {{ offer['instantTicketingRequired'] }}<br>
+                    <strong>Number of Bookable Seats:</strong> {{ offer['numberOfBookableSeats'] }}<br>
+                    <strong>Non-Homogeneous:</strong> {{ offer['nonHomogeneous'] }}<br>
+                    <strong>One Way:</strong> {{ offer['oneWay'] }}<br>
+                    <strong>Last Ticketing Date:</strong> {{ offer['lastTicketingDate'] }}<br>
+                    <strong>Validating Airline Codes:</strong> {{ offer['validatingAirlineCodes']|join(', ') }}
+                </li>
+                <hr>
+            {% endfor %}
+            </ul></td>
+    
+            <td>    
+        {% if flight_data %}
+            <ul>
+            {% for offer in flight_data_return %}
+                <li>
+                    <strong>Company:</strong> {{ offer['itineraries'][0]['segments'][0]['carrierCode'] }}<br>
+                    <strong>Company (Name):</strong> {{ airline2 }}<br>
+                    <strong>Price:</strong> {{ offer['price']['total'] }} {{ offer['price']['currency'] }}<br>
+                    <strong>Duration:</strong> {{ offer['itineraries'][0]['duration'] | duration_formatter }}<br>
+                    <strong>Departure Airport:</strong> {{ offer['itineraries'][0]['segments'][0]['departure']['iataCode'] }}<br>
+                    <strong>Departure Time:</strong> {{ offer['itineraries'][0]['segments'][0]['departure']['at']|format_datetime }}<br>
+                    <strong>Arrival Airport:</strong> {{ offer['itineraries'][0]['segments'][-1]['arrival']['iataCode'] }}<br>
+                    <strong>Arrival Time:</strong> {{ offer['itineraries'][0]['segments'][-1]['arrival']['at']|format_datetime }}<br>
+                    <strong>Number of Stops:</strong> {{ offer['itineraries'][0]['segments'][0]['numberOfStops'] }}<br>
+                    <strong>Instant Ticketing Required:</strong> {{ offer['instantTicketingRequired'] }}<br>
+                    <strong>Number of Bookable Seats:</strong> {{ offer['numberOfBookableSeats'] }}<br>
+                    <strong>Non-Homogeneous:</strong> {{ offer['nonHomogeneous'] }}<br>
+                    <strong>One Way:</strong> {{ offer['oneWay'] }}<br>
+                    <strong>Last Ticketing Date:</strong> {{ offer['lastTicketingDate'] }}<br>
+                    <strong>Validating Airline Codes:</strong> {{ offer['validatingAirlineCodes']|join(', ') }}
+                </li>
+                <hr>
+            {% endfor %}
+            {% endif %}
+            </ul></td>
+        </tr>
+    </table>
+        {% else %}
+            <p>{{ error }}</p>
+        {% endif %}
+{% endblock %}
+
