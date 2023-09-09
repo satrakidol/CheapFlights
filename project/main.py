@@ -46,18 +46,14 @@ def get_flight_price():
         checkDepartureCode = db_session.query(Cities).filter(Cities.codes == departure).first()
         
 
-        if checkDepartureCode:
-            departure = departure
-        else:
+        if not checkDepartureCode:
             departure = db_session.query(Cities.codes).filter(Cities.city == departure).all()
             departure = str(departure)
             departure=departure.replace("(", "").replace(")", "").replace("," , "").replace("[" , "").replace("]" , "").replace("'" , "")
 
         checkDestinationCode = db_session.query(Cities).filter(Cities.codes == destination).first()
 
-        if checkDestinationCode:
-            destination = destination
-        else:
+        if not checkDestinationCode:
             destination = db_session.query(Cities.codes).filter(Cities.city == destination).all()
             destination = str(destination)
             destination=destination.replace("(", "").replace(")", "").replace("," , "").replace("[" , "").replace("]" , "").replace("'" , "")
@@ -125,6 +121,11 @@ def get_flight_price():
             # print(response)
             flight_data = response.data  
             flight_data_return = response_return.data
+
+            import pprint
+            pprint.pprint(response)
+            # {{ offer['price']['total'] }} {{ offer['price']['currency'] }}
+
 
             ####APO EDO####
             # carrier_code2 = flight_data['itineraries'][0]['segments'][0]['carrierCode']
@@ -220,3 +221,51 @@ def format_datetime(iso_datetime):
     parsed_datetime = datetime.strptime(iso_datetime, '%Y-%m-%dT%H:%M:%S')
     formatted_datetime = parsed_datetime.strftime('%B %d, %Y %I:%M %p')
     return formatted_datetime
+
+
+@main.route('/total', methods=['GET', 'POST'])
+def total():
+    if request.method == 'GET':
+        carrierCodeGo = request.args.get('carrierCodeGo')
+        index = request.args.get('index')
+        priceGo = request.args.get('priceGo')
+        priceGo = float(priceGo)
+
+        carrierCodeReturn = request.args.get('carrierCodeReturn')
+        indexReturn= request.args.get('indexReturn')
+        priceReturn = request.args.get('priceReturn')
+        priceReturn = float(priceReturn)
+        totalPrice = priceGo + priceReturn
+        
+
+        return render_template('confirmation.html', carrierCodeGo=carrierCodeGo, index=index, priceGo=priceGo, priceReturn=priceReturn, indexReturn=indexReturn, totalPrice=totalPrice, carrierCodeReturn=carrierCodeReturn)
+    else:
+        return render_template('base.html')
+
+    
+
+
+
+# @main.route('/select_flight', methods=['POST', 'GET'])
+# def select_flight():
+#     if request.method == 'POST':
+#         selected_outgoing_index = int(request.form.get('selected_offer_outgoing', -1))
+#         selected_return_index = int(request.form.get('selected_offer_return', -1))
+
+#         selected_outgoing_flight = None
+#         selected_return_flight = None
+
+#         if selected_outgoing_index != -1 and selected_outgoing_index < len(flight_data):
+#             selected_outgoing_flight = flight_data[selected_outgoing_index]
+
+#         if selected_return_index != -1 and selected_return_index < len(flight_data_return):
+#             selected_return_flight = flight_data_return[selected_return_index]
+
+#         # You can now use the selected_outgoing_flight and selected_return_flight variables
+#         # to access the details of the selected flights and perform further processing.
+
+#         return render_template('confirmation.html', 
+#             selected_outgoing_flight=selected_outgoing_flight, 
+#             selected_return_flight=selected_return_flight)
+
+    

@@ -26,11 +26,6 @@ Cities_file = 'project/IATA Codes/Cities.csv'
 df_Cities_file = pd.read_csv(Cities_file)
 
 
-# Airlines = 'airlines'  
-# Cities = 'airportCity' 
-# df_airlines_file.to_sql(Airlines, engine, index=False, if_exists='replace')  
-# df_AirportCity_file.to_sql(Cities, engine, index=False, if_exists='replace')  
-
 class Base(DeclarativeBase):
     pass
 
