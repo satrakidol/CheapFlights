@@ -396,6 +396,7 @@ def get_cheapest_dates():
                 # price =  offer['price']['total']
                 # print(f'price: {price}')
                
+               #
                 
                 #Departure Airport IATA
                 airportCode =  offer['origin']
