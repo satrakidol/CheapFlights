@@ -5,8 +5,8 @@
     /* Table */
     table {
         border-collapse: collapse;
-        width: 100%;
-        max-width: 800px;
+        width: auto;
+        max-width: 950px;
         margin: 20px auto;
         background-color: #f8f8f8;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -29,9 +29,22 @@
         background-color: #f2f2f2;
     }
 
+    td {
+        padding: 10px 20px;
+        border-bottom: 1px solid #ddd;
+        color: #333;
+    }
+
+    /* Add a border to the <li> elements inside table cells */
+    td li {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin: 5px 0;
+    }
+
     li:hover {
         background-color: #fefcfc;
-        font-size: large;
+        font-size: 16.2px;
     }
 
     /* Table Data Cells */
@@ -43,13 +56,15 @@
 </style>
 <h1 style="font-size: x-large; font-weight: bold;">Flight Search Results</h1>
 <table>
+    {% if flight_data_return %}
     <tr>
         <th style="color: white; text-align: center;">Outgoing</th>
-        <th style="color: white; text-align: center;">Return</th>
+       {% if flight_data_return %}<th style="color: white; text-align: center;">Return</th>{%endif%}
     </tr>
+    {% endif %}
     <tr>
+        {% if flight_data %}
         <td>
-            {% if flight_data %}
             <ul>
                 {% for offer in flight_data %}
                 <li>
@@ -76,8 +91,9 @@
                 {% endfor %}
             </ul>
             </td>
+        {%endif%}
+        {% if flight_data_return %}
         <td>
-            {% if flight_data %}
             <ul>
                 {% for offer in flight_data_return %}
                 <li>
@@ -102,14 +118,15 @@
                 </li>
                 <hr>
                 {% endfor %}
-                {% endif %}
             </ul>
-            </td>
+        </td>
+    {%endif%}
     </tr>
 </table>
 <button id="postdata" onclick="submitData()">Post</button>;
 
-{% else %}
+{%if not flight_data%}
+
 <p>{{ error }}</p>
 {% endif %}
 

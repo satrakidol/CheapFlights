@@ -4,10 +4,14 @@ AA,American Airlines
 CO,Continental Airlines
 DL,Delta Air Lines
 NW,Northwest Airlines (alternate site)
+IP,Pelita Air Service
 AC,Air Canada
+FP,Pelican Airlines Pty Ltd dba Flypelican
 UA,United Airlines Cargo
 CP,Canadian Airlines Int´l
 LH,Lufthansa Cargo AG
+PC,Pegasus Hava Tasimaciligi A.S.
+H1,Hahn Air Systems
 FX,Fedex
 AS,Alaska Airlines
 US,USAirways
@@ -25,6 +29,7 @@ HM,Air Seychelles
 OK,Czech Airlines
 SV,Saudi Arabian Airlines
 RB,Syrian Arab Airlines
+D8,Norwegian Air Sweden AOC AB
 ET,Ethiopian Airlines
 GF,Gulf Air
 KL,KLM Cargo

@@ -1179,9 +1179,9 @@ QGF,Montenegro,Brazil
 MRY,Monterey (CA),USA
 MTY,Monterrey - Gen. Mariano Escobedo,Mexico
 NTR,Monterrey - Aeropuerto Del Norte,Mexico
-MVD,Montevideo - Carrasco International Airport,Uruguay
+MVD,Montevideo - Carrasco Airport,Uruguay
 MGM,Montgomery (AL) - Montgomery Regional Airport,USA
-MPL,Montpellier - Montpellier–Méditerranée Airport,France
+MPL,Montpellier–Méditerranée Airport,France
 YMQ,Montreal,Canada
 YUL,Montreal - Dorval (Montréal-Trudeau),Canada
 YMX,Montreal - Mirabel,Canada
@@ -1209,7 +1209,7 @@ MGB,Mount Gambier,Australia
 MMG,Mount Magnet,Australia
 ISA,Mt. Isa,Australia
 MCL,Mt. McKinley (AK),USA
-MUC,Muenchen (Munich) - Franz Josef Strauss,Germany
+MUC,Munich - Franz Josef Strauss,Germany
 FMO,Muenster/Osnabrueck,Germany
 MLH,Mulhouse,France
 MUX,Multan,Pakistan
@@ -1222,8 +1222,8 @@ MKG,Muskegon (MI),USA
 MFG,Muzaffarabad,Pakistan
 MVB,Mvengue,Gabon
 JMK,Mykonos,Greece
-MYR,Myrtle Beach (SC) - Myrtle Beach AFB,USA
-CRE,Myrtle Beach (SC) - Grand Strand Airport,USA
+MYR,Myrtle Beach AFB,USA
+CRE,Grand Strand Airport,USA
 MYQ,Mysore,India
 MJT,Mytilene (Lesbos),Greece
 MZF,Mzamba,South Africa
@@ -1237,15 +1237,15 @@ NST,Nakhon Si Thammarat,Thailand
 ENC,Nancy,France
 YSR,Nanisivik,Canada
 NNG,Nanning,"Guangxi, PR China"
-NTE,Nantes - Nantes Atlantique Airport,France
+NTE,Nantes Atlantique Airport,France
 ACK,Nantucket (MA),USA
-NAP,Naples - Naples Capodichino Airport,Italy
+NAP,Naples Capodichino Airport,Italy
 APF,Naples (FL),USA
 NAA,Narrabri,Australia
 NRA,Narrandera,Australia
 UAK,Narsarsuaq,Greenland
 BNA,Nashville (TN),USA
-NAT,Natal - Augusto Severo International Airport,Brazil
+NAT,Natal - Augusto Severo Airport,Brazil
 SUV,Nausori,Fiji/Suva
 WNS,Nawab Shah,Pakistan
 JNX,Naxos - Naxos Airport,Greece
@@ -1253,15 +1253,15 @@ NDJ,N'Djamena,Chad
 NLA,N'Dola,Zambia
 NSN,Nelson,New Zealand
 NLP,Nelspruit,South Africa
-MQP,Nelspruit - Kruger Mpumalanga International Airport,South Africa
+MQP,Nelspruit - Kruger Mpumalanga Airport,South Africa
 NEV,Nevis,St. Kitts and Nevis
 EWN,New Bern (NC),USA
 HVN,New Haven (CT),USA
 MSY,"New Orleans, La",USA
 NQY,Newquay,United Kingdom
-JFK,New York - John F. Kennedy (NY),USA
-LGA,New York - LaGuardia (NY),USA
-EWR,New York - Newark (NJ),USA
+JFK,New York - John F. Kennedy,USA
+LGA,New York - LaGuardia,USA
+EWR,New York - Newark,USA
 NYC,New York (NY),USA
 SWF,Newburgh (NY),USA
 BEO,Newcastle - Belmont,Australia
@@ -1269,7 +1269,7 @@ NTL,Newcastle - Williamtown,Australia
 NCL,Newcastle,United Kingdom
 NCS,Newcastle,South Africa
 ZNE,Newman,Australia
-PHF,Newport News/Williamsburg (VA),USA
+PHF,Newport News/Williamsburg,USA
 NGE,N'Gaoundere,Cameroon
 IAG,Niagara Falls International,USA
 NIM,Niamey,Niger
@@ -1279,11 +1279,11 @@ NLV,Nikolaev,Ukraine
 KIJ,Niigata,Japan
 FNI,Nimes,France
 INI,Nis,Serbia
-GOJ,Nizhny Novgorod - Strigino International Airport,Russia
+GOJ,Nizhny Novgorod - Strigino Airport,Russia
 OME,Nome (AK),USA
 NSA,Noosa,Australia
 NLK,Norfolk Island,Australia
-ORF,Norfolk/Virginia Beach (VA),USA
+ORF,Norfolk/Virginia Beach,USA
 YVQ,Norman Wells,Canada
 NRK,Norrkoeping,Sweden
 OTH,North Bend (OR),USA
@@ -1322,10 +1322,10 @@ MCO,Orlando - International Airport (FL),USA
 ORS,Orpheus Island,Australia
 OSA,"Osaka, Metropolitan Area",Japan
 ITM,Osaka - Itami,Japan
-KIX,Osaka - Kansai International Airport,Japan
+KIX,Osaka - Kansai Airport,Japan
 OSH,Oshkosh (WI),USA
 OSI,Osijek,Croatia (Hrvatska)
-OSL,"Oslo - Oslo Airport, Gardermoen",Norway
+OSL,"Oslo Airport, Gardermoen",Norway
 FBU,Oslo - Fornebu,Norway
 TRF,Oslo - Sandefjord,Norway
 YOW,Ottawa - Hull,Canada
@@ -1344,7 +1344,7 @@ PAD,Paderborn/Lippstadt,Germany
 PAH,Paducah (KY),USA
 PGA,Page/Lake Powell (AZ),USA
 PPG,Pago Pago,American Samoa
-PKB,Pakersburg (WV) /Marietta (OH),USA
+PKB,Pakersburg /Marietta,USA
 PMO,Palermo - Punta Raisi,Italy
 PMI,Palma de Mallorca,Spain
 PMW,Palmas,Brazil
@@ -1382,9 +1382,9 @@ PSR,Pescara,Italy
 PEW,Peshawar,Pakistan
 PSG,Petersburg (AK),USA
 PHW,Phalaborwa,South Africa
-PHL,Philadelphia (PA) - International,USA
+PHL,Philadelphia - International,USA
 PNH,Phnom Penh - Pochentong,Cambodia
-PHX,Phoenix (AZ) - Sky Harbor International,USA
+PHX,Phoenix - Sky Harbor International,USA
 HKT,Phuket,Thailand
 PIR,Pierre (SD),USA
 PZB,Pietermaritzburg,South Africa
@@ -1417,7 +1417,7 @@ PQQ,Port Macquarie,Australia
 YPN,"Port Menier, PQ",Canada
 POM,Port Moresby - Jackson Field,Papua New Guinea
 OPO,Porto,Portugal
-POA,Porto Alegre - Salgado Filho International Airport,Brazil
+POA,Porto Alegre - Salgado Filho Airport,Brazil
 POS,Port of Spain - Piarco International,Trinidad and Tobago
 PSD,Port Said,Egypt
 PXO,Porto Santo,Portugal
@@ -1425,7 +1425,7 @@ PVH,Porto Velho,Brazil
 VLI,Port Vila,Vanuatu
 POU,Poughkeepsie (NY),USA
 POZ,"Poznan, Lawica",Poland
-PRG,Prague - Václav Havel Airport (formerly Ruzyne),Czech Republic
+PRG,Prague - Václav Havel Airport,Czech Republic
 RAI,Praia - Nelson Mandela International Airport,Cape Verde
 PQI,Presque Island (ME),USA
 PRY,Pretoria - Wonderboom Apt.,South Africa
@@ -1449,15 +1449,15 @@ PNQ,Pune,"India, Maharashtra"
 PUQ,Punta Arenas - Presidente Carlos Ibáñez del Campo,Chile
 PUJ,Punta Cana - Punta Cana International,Dominican Republic
 PUS,Pu San (Busan) - Gimhae International Airport,South Korea
-FNJ,Pyongyang - Sunan International Airport,North Korea
-YQB,Quebec - Quebec International,Canada
+FNJ,Pyongyang - Sunan Airport,North Korea
+YQB,Quebec International,Canada
 UEE,Queenstown,Australia
 ZQN,Queenstown,New Zealand
 UET,Quetta,Pakistan
 TAO,Qingdao,"Shandong, PR China"
 UIP,Quimper,France
 UIN,Quincy (IL),USA
-UIO,Quito - Mariscal Sucre International Airport,Ecuador
+UIO,Quito - Mariscal Sucre Airport,Ecuador
 RBA,Rabat - Rabat-Salé Airport,Morocco
 RYK,Rahim Yar Khan - Shaikh Zayed International Airport,Pakistan
 RFP,Raiatea,French Polynesia
@@ -1469,11 +1469,11 @@ RGI,Rangiroa,French Polynesia
 RGN,Rangoon (Yangon) - Mingaladon,Myanmar
 RAP,Rapid City (SD),USA
 RAR,Rarotonga,Cook Island
-RKT,Ras al Khaymah (Ras al Khaimah),United Arab Emirates
+RKT,Ras al Khaymah,United Arab Emirates
 RAZ,Rawala Kot,Pakistan
 RWP,Rawalpindi,Pakistan
 RDG,Reading (PA),USA
-REC,Recife - Guararapes-Gilberto Freyre International,Brazil
+REC,Recife - Guararapes-Gilberto Freyre ,Brazil
 RDD,Redding (CA),USA
 RDM,Redmond (OR),USA
 REG,Reggio Calabria,Italy
@@ -1492,7 +1492,7 @@ RIC,Richmond (VA),USA
 RIX,Riga,Latvia
 RJK,Rijeka,Croatia (Hrvatska)
 RMI,Rimini,Italy
-RBR,Rio Branco - Plácido de Castro International Airport,Brazil
+RBR,Rio Branco - Plácido de Castro Airport,Brazil
 GIG,Rio de Janeiro - Galeao,Brazil
 SDU,Rio de Janeiro - Santos Dumont,Brazil
 RIO,Rio de Janeiro,Brazil
@@ -1526,7 +1526,7 @@ ROU,Ruse,Bulgaria
 SCN,Saarbruecken,Germany
 SMF,Sacramento (CA),USA
 SDS,Sado Shima,Japan
-MBS,Saginaw/Bay City/Midland (MI),USA
+MBS,Saginaw/Bay City/Midland,USA
 SDT,Saidu Sharif,Pakistan
 SBK,Saint Brieuc,France
 RUN,Saint Denis - Roland Garros Airport,Reunion
@@ -1544,19 +1544,19 @@ SLA,"Salta, Gen Belgrano",Argentina
 SLC,Salt Lake City (UT),USA
 SSA,Salvador - Salvador International Airport,Brazil
 SZG,Salzburg - W.A. Mozart,Austria
-KUF,Samara - Kurumoch International Airport,Russia
-SKD,Samarkand - Samarkand International Airport,Uzbekistan
+KUF,Samara - Kurumoch International ,Russia
+SKD,Samarkand - Samarkand International ,Uzbekistan
 SMI,Samos,Greece
 SZF,Samsun,Turkey
 ADZ,San Andres,Colombia
 SJT,San Angelo (TX),USA
 SAT,San Antonio (TX),USA
 BRC,San Carlos de Bariloche,Argentina
-SAN,San Diego - Lindberg Field International (CA),USA
-SFO,"San Francisco - International Airport, SA",USA
+SAN,San Diego - Lindberg Field International,USA
+SFO,San Francisco - International Airport,USA
 SJO,San Jose,Costa Rica
 SJC,San Jose (CA),USA
-SJU,San Juan - Luis Munoz Marin International Airport,Puerto Rico
+SJU,San Juan - Luis Munoz Marin International ,Puerto Rico
 SBP,San Luis Obisco (CA),USA
 SLP,San Luis Potosi,Mexico
 SPY,San Pedro,Cote d'Ivoire
@@ -1617,9 +1617,9 @@ SNN,Shannon (Limerick),Ireland
 SHJ,Sharjah,United Arab Emirates
 SSH,Sharm El Sheikh,Egypt
 SZD,"Sheffield, City Airport",United Kingdom
-SHD,Shenandoah Valley/Stauton (VA),USA
+SHD,Shenandoah Valley/Stauton,USA
 SHE,Shenyang,"Liaoning, PR China"
-SZX,Shenzhen - Shenzhen Bao'an International,"Guangdong, PR China"
+SZX,Shenzhen Bao'an International,"Guangdong, PR China"
 SHR,Sheridan (WY),USA
 SHV,"Shreveport, La",USA
 JHQ,Shute Harbour,Australia

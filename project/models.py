@@ -2,16 +2,19 @@ from flask_login import UserMixin
 from . import db
 from sqlalchemy.orm import Mapped, mapped_column, relationship, DeclarativeBase, sessionmaker
 from sqlalchemy import String, DateTime, ForeignKey, Integer
+from typing import List
 
 class User(UserMixin, db.Model):
     id = db.Column(db.Integer, primary_key=True) # primary key
-    email = db.Column(db.String(100), unique=True)
-    password = db.Column(db.String(100))
-    name = db.Column(db.String(100))
-    lname = db.Column(db.String(100))
+    email = db.Column(db.String(30), unique=True, nullable=False)
+    password = db.Column(db.String(20), nullable=False)
+    name = db.Column(db.String(20), nullable=False)
+    lname = db.Column(db.String(20), nullable=False)
+    notifications: Mapped[List["Notification"]] = relationship(back_populates="user")
 
 from sqlalchemy import create_engine
 import pandas as pd
+
 
 db_name = 'instance/db.sqlite'
 engine = create_engine(f'sqlite:///{db_name}')
@@ -45,9 +48,6 @@ class Cities(Base):
     city: Mapped[str] = mapped_column(String(20), unique=False,nullable=False)
     country: Mapped[str] = mapped_column(String(20), unique=False,nullable=False)
 
-    # def __str__(self):
-    #     return self.city
-
     def __str__(self):
         return f"<Cities codes={self.codes}, city = {self.city}"
 
@@ -59,6 +59,18 @@ class Airports(Base):
 
     def __str__(self):
         return self.airport
+
+class Notification(db.Model):
+    __tablename__ = 'notification'
+    notificationID = db.Column(db.Integer, primary_key=True)
+    userID = db.Column(db.Integer, ForeignKey("user.id"))  # ForeignKey to User.id
+    user = relationship("User", back_populates="notifications")
+    origin = db.Column(db.String)
+    destination = db.Column(db.String)
+    minDate = db.Column(db.String)
+    maxDate = db.Column(db.String)
+    priceGo = db.Column(db.Integer)
+    priceReturn = db.Column(db.Integer)
     
 
 Session = sessionmaker(bind=engine)

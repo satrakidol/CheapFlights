@@ -1,0 +1,151 @@
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+    /* Table */
+    table {
+        border-collapse: collapse;
+        width: auto;
+        max-width: 950px;
+        margin: 20px auto;
+        background-color: #f8f8f8;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+
+    /* Table Header */
+    th {
+        background-color: #333;
+        color: white;
+        font-weight: bold;
+        font-size: large;
+        padding: 10px 20px;
+        text-align: left;
+        border-bottom: 2px solid #444;
+    }
+
+    /* Table Rows */
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    td {
+        padding: 10px 20px;
+        border-bottom: 1px solid #ddd;
+        color: #333;
+    }
+
+    /* Add a border to the <li> elements inside table cells */
+    td li {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin: 5px 0;
+    }
+
+    li:hover {
+        background-color: #fefcfc;
+        font-size: 16.2px;
+    }
+
+    /* Table Data Cells */
+    td {
+        padding: 10px 20px;
+        border-bottom: 1px solid #ddd;
+        color: #333;
+    }
+</style>
+<h1 style="font-size: x-large; font-weight: bold;">Cheapest dates to travel</h1>
+<table>
+    <tr>
+        <th style="color: white; text-align: center;">Outgoing</th>
+        <th style="color: white; text-align: center;">Return</th>
+    </tr>
+    <tr>
+        <td>
+            {% if flight_data %}
+            <ul>
+                {% for offer in flight_data %}
+                <li>
+                    <input type="radio" name="selected_offer_outgoing" value="{{ loop.index0 }}" id="offer{{ loop.index0 }}">
+                    <p><strong>Origin:</strong> {{ offer['origin'] }}</p>
+                    <strong>Departure Airport (Name):</strong> {{ departures[loop.index0] }}<br>
+                    <p><strong>Destination:</strong> {{ offer['destination'] }}</p>
+                    <strong>Arrival Airport (Name):</strong> {{ arrivals[loop.index0] }}<br>
+                    <p><strong>DepartureDate:</strong> {{ offer['departureDate'] }}</p>
+                    <p><strong>Price:</strong> {{ offer['price']['total'] }} </p>
+                    <p><strong>Flight Offers:</strong>
+                        <a href="{{ url_for('main.get_flight_price',
+                                           origin=offer['origin'],
+                                           destination=offer['destination'],
+                                           departureDate=offer['departureDate'],
+                                           price=offer['price']['total']) }}" target="_blank">Click here to view the offer</a><br>
+                    </p>                    
+                </li>
+                <hr>
+                {% endfor %}
+            </ul>
+            </td>
+        <td>
+            {% if flight_data %}
+            <ul>
+                {% for offer in flight_data_return %}
+                <li>
+                    <input type="radio" name="selected_offer_return" value="{{ loop.index0 }}" id="offerReturn{{ loop.index0 }}">
+                    <p><strong>Origin:</strong> {{ offer['origin'] }}</p>
+                    <strong>Departure Airport (Name):</strong> {{ departuresReturn[loop.index0] }}<br>
+                    <p><strong>Destination:</strong> {{ offer['destination'] }}</p>
+                    <strong>Arrival Airport (Name):</strong> {{ arrivalsReturn[loop.index0] }}<br>
+                    <p><strong>DepartureDate:</strong> {{ offer['departureDate'] }}</p>
+                    <p><strong>Price:</strong> {{ offer['price']['total'] }} </p>
+                    <p><strong>Flight Offers:</strong>
+                        <a href="{{ url_for('main.get_flight_price',
+                                           origin=offer['origin'],
+                                           destination=offer['destination'],
+                                           departureDate=offer['departureDate'],
+                                           price=offer['price']['total']) }}" target="_blank">Click here to view the offer</a><br>
+                    </p> 
+                </li>
+                <hr>
+                {% endfor %}
+                {% endif %}
+            </ul>
+            </td>
+    </tr>
+</table>
+<button id="postdata" onclick="submitData()">Post</button>;
+
+{% else %}
+<p>{{ error }}</p>
+{% endif %}
+
+
+
+<script>
+document.getElementById('postdata').addEventListener('click', function() {
+    // Determine the selected index based on the checked radio button
+    let selectedRadio = document.querySelector('input[name="selected_offer_outgoing"]:checked');
+    let selectedRadioReturn = document.querySelector('input[name="selected_offer_return"]:checked');
+    if (selectedRadio && selectedRadioReturn) {
+        let index = selectedRadio.value;
+        let carrierCodeGo = document.getElementById("carrierCodeGo" + index).textContent;
+        let priceGo = document.getElementById("priceGo" + index).textContent;
+        // priceGo = parseFloat(priceGo);
+    
+        let indexReturn= selectedRadioReturn.value;
+        let priceReturn = document.getElementById("priceReturn" + indexReturn).textContent;
+        let carrierCodeReturn = document.getElementById("carrierCodeReturn" + indexReturn).textContent;
+        // priceReturn = parseFloat(priceReturn);
+        redirectToOtherPage(carrierCodeGo, index, priceGo, priceReturn, indexReturn, carrierCodeReturn);
+        console.log(index);
+    } else {
+        alert("No radio button selected.");
+    }
+});
+
+function redirectToOtherPage(carrierCodeGo, index, priceGo, priceReturn, indexReturn, carrierCodeReturn) {
+    window.location.href = "{{ url_for('main.total') }}?carrierCodeGo=" + carrierCodeGo + "&index=" + index + "&priceGo=" + priceGo + "&priceReturn=" + priceReturn + "&indexReturn=" + indexReturn + "&carrierCodeReturn=" + carrierCodeReturn; 
+}
+</script>
+
+
+{% endblock %}
