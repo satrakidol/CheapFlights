@@ -11,19 +11,58 @@
     .bigger-form input[type="submit"] {
         font-size: large; 
     }
+
+    .input-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .input-container label {
+        flex: 1;
+        text-align: left;
+        padding-right: 10px; /* Add spacing between label and input */
+    }
+
+    .input-container input[type="text"] {
+        width: 200px; /* Adjust the width as per your preference */
+        text-align: left; /* Align text within the input field to the left */
+    }
+
+    /* Add non-breaking spaces before the placeholders to start from the 5th character */
+    .input-container input[type="text"]::placeholder {
+        content: "\00a0\00a0\00a0\00a0\00a0"; /* 5 non-breaking spaces */
+    }
+
+    /* Center the parent div horizontally */
+    .centered-container {
+        display: flex;
+        justify-content: center;
+    }
 </style>
 
-<form action="{{ request.path }}" method="post" class="bigger-form">
-    <label for="departure">Departure</label>
-    <input type="text" name="departure" placeholder="Departure" /><br>
-    <label for="destination">Destination</label>
-    <input type="text" name="destination" placeholder="Destination" /><br>
-    <label for="begin_date">Begin Date</label>
-    <input type="text" name="begin_date" placeholder="Begin Date" /><br>
-    <label for="return_date">Return Date</label>
-    <input type="text" name="return_date" placeholder="Return Date" /><br>
-    <input type="submit" value="Submit" />
-</form>
-
+<div class="centered-container">
+    <div>
+        <form action="{{ request.path }}" method="post" class="bigger-form">
+            <div class="input-container">
+                <label for="departure">Departure</label>
+                <input type="text" name="departure" placeholder="     Departure" />
+            </div>
+            <div class="input-container">
+                <label for="destination">Destination</label>
+                <input type="text" name="destination" placeholder="     Destination" />
+            </div>
+            <div class="input-container">
+                <label for="begin_date">Begin Date</label>
+                <input type="text" name="begin_date" placeholder="     Begin Date" />
+            </div>
+            <div class="input-container">
+                <label for="return_date">Return Date</label>
+                <input type="text" name="return_date" placeholder="     Return Date" />
+            </div>
+            <input type="submit" value="Submit" />
+        </form>
+    </div>
+</div>
 
 {% endblock %}

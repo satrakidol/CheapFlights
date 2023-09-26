@@ -53,6 +53,16 @@
         border-bottom: 1px solid #ddd;
         color: #333;
     }
+
+    .radio-container {
+        border: 1px solid #ccc; /* Add a border to create a box effect */
+        padding: 10px; /* Add padding to create space inside the box */
+        display: inline-block; /* Make the box inline so it aligns horizontally */
+    }
+
+    .radio-label {
+        font-weight: bold;
+    }
 </style>
 <h1 style="font-size: x-large; font-weight: bold;">Flight Search Results</h1>
 <table>
@@ -68,7 +78,6 @@
             <ul>
                 {% for offer in flight_data %}
                 <li>
-                    <input type="radio" name="selected_offer_outgoing" value="{{ loop.index0 }}" id="offer{{ loop.index0 }}">
                     <strong>Company:</strong> {{ offer['itineraries'][0]['segments'][0]['carrierCode'] }}<br>
                     <strong>Company (Name):</strong> <span id="carrierCodeGo{{ loop.index0 }}">{{ airlines[loop.index0] }}</span><br>
                     <strong>Price:</strong> <span id="priceGo{{ loop.index0 }}">{{ offer['price']['total'] }} </span> {{ offer['price']['currency'] }}<br>
@@ -85,7 +94,11 @@
                     <strong>Non-Homogeneous:</strong> {{ offer['nonHomogeneous'] }}<br>
                     <strong>One Way:</strong> {{ offer['oneWay'] }}<br>
                     <strong>Last Ticketing Date:</strong> {{ offer['lastTicketingDate'] }}<br>
-                    <strong>Validating Airline Codes:</strong> {{ offer['validatingAirlineCodes']|join(', ') }}
+                    <strong>Validating Airline Codes:</strong> {{ offer['validatingAirlineCodes']|join(', ') }}<br>
+                    <div class="radio-container">
+                        <label for="offer{{ loop.index0 }}" class="radio-label">Select Flight</label>
+                        <input type="radio" name="selected_offer_outgoing" value="{{ loop.index0 }}" id="offer{{ loop.index0 }}">
+                    </div><br>
                 </li>
                 <hr>
                 {% endfor %}
@@ -97,7 +110,6 @@
             <ul>
                 {% for offer in flight_data_return %}
                 <li>
-                    <input type="radio" name="selected_offer_return" value="{{ loop.index0 }}" id="offerReturn{{ loop.index0 }}">
                     <strong>Company:</strong> {{ offer['itineraries'][0]['segments'][0]['carrierCode'] }}<br>
                     <strong>Company (Name):</strong> <span id="carrierCodeReturn{{ loop.index0 }}">{{ airlinesReturn[loop.index0] }}</span><br>
                     <strong>Price:</strong> <span id="priceReturn{{ loop.index0 }}">{{ offer['price']['total'] }} </span> {{ offer['price']['currency'] }}<br>
@@ -114,7 +126,11 @@
                     <strong>Non-Homogeneous:</strong> {{ offer['nonHomogeneous'] }}<br>
                     <strong>One Way:</strong> {{ offer['oneWay'] }}<br>
                     <strong>Last Ticketing Date:</strong> {{ offer['lastTicketingDate'] }}<br>
-                    <strong>Validating Airline Codes:</strong> {{ offer['validatingAirlineCodes']|join(', ') }}
+                    <strong>Validating Airline Codes:</strong> {{ offer['validatingAirlineCodes']|join(', ') }}<br>
+                    <div class="radio-container">
+                        <label for="offer{{ loop.index0 }}" class="radio-label">Select Flight</label>
+                        <input type="radio" name="selected_offer_return" value="{{ loop.index0 }}" id="offerReturn{{ loop.index0 }}">
+                    </div><br>
                 </li>
                 <hr>
                 {% endfor %}
@@ -150,7 +166,7 @@ document.getElementById('postdata').addEventListener('click', function() {
         redirectToOtherPage(carrierCodeGo, index, priceGo, priceReturn, indexReturn, carrierCodeReturn);
         console.log(index);
     } else {
-        alert("No radio button selected.");
+        alert("Both radio buttons should be selected");
     }
 });
 

@@ -19,6 +19,7 @@ from . models import Airlines, Cities, Airports, Notification
 from . database import db_session, init_db
 from datetime import date
 # import datetime
+from datetime import datetime, timedelta
 
 main = Blueprint('main', __name__)
 
@@ -266,11 +267,13 @@ def get_cheapest_dates():
             min_date = today
         
         if not max_date:
-            max_date = '2024-09-15'
-            # max_date = today + datetime.timedelta(days=350)
+            max_date = today + timedelta(days=360)
+
 
         departureDate= f"{min_date},{max_date}"
-                # departureDate="2023-09-25,2023-12-25",
+
+
+        # departureDate="2023-09-25,2023-12-25",
 
         print(f'checkDestinationCode :{checkDestinationCode}')
         print(f'destination :{destination}')
@@ -379,7 +382,7 @@ def get_cheapest_dates():
 
             #CREATING NEW GO NOTIFICATION IN DB
 
-                priceGo = offer['price']['total']
+                priceGo = float(offer['price']['total'])
                 pricesGO.append(priceGo)
             priceGo=min(pricesGO)
             print(f'minpriceGo: {priceGo}')
@@ -396,7 +399,6 @@ def get_cheapest_dates():
                 # price =  offer['price']['total']
                 # print(f'price: {price}')
                
-               #
                 
                 #Departure Airport IATA
                 airportCode =  offer['origin']
@@ -412,17 +414,19 @@ def get_cheapest_dates():
 
             #CREATING NEW RETURN NOTIFICATION IN DB
 
-                priceReturn = offer['price']['total']
-                print(f'priceReturn: {priceReturn}')
+                priceReturn = float(offer['price']['total'])
+                # print(f'priceReturn: {priceReturn}')
                 pricesReturn.append(priceReturn)
 
-            priceReturn = min(pricesReturn)
-            for i in pricesReturn:
-                print(f'minpriceReturn: {i}')
+            minpriceReturn = min(pricesReturn)
+            print(f'priceReturnList: {pricesReturn}')
+            print(f'minpriceReturn: {minpriceReturn}')
+            # for i in pricesReturn:
+            #     print(f'minpriceReturn: {i}')
             # print(f'minpriceReturn: {priceReturn}')
             notification = Notification(userID=current_user.id,origin=departure, destination = destination,
                                         minDate = min_date, maxDate = max_date,
-                                        priceGo=priceGo, priceReturn=priceReturn)
+                                        priceGo=priceGo, priceReturn=minpriceReturn)
             db_session.add(notification)
             db_session.commit()
 

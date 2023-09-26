@@ -54,6 +54,7 @@
         color: #333;
     }
 </style>
+
 <h1 style="font-size: x-large; font-weight: bold;">Cheapest dates to travel</h1>
 <table>
     <tr>
@@ -66,7 +67,6 @@
             <ul>
                 {% for offer in flight_data %}
                 <li>
-                    <input type="radio" name="selected_offer_outgoing" value="{{ loop.index0 }}" id="offer{{ loop.index0 }}">
                     <p><strong>Origin:</strong> {{ offer['origin'] }}</p>
                     <strong>Departure Airport (Name):</strong> {{ departures[loop.index0] }}<br>
                     <p><strong>Destination:</strong> {{ offer['destination'] }}</p>
@@ -75,10 +75,12 @@
                     <p><strong>Price:</strong> {{ offer['price']['total'] }} </p>
                     <p><strong>Flight Offers:</strong>
                         <a href="{{ url_for('main.get_flight_price',
-                                           origin=offer['origin'],
-                                           destination=offer['destination'],
-                                           departureDate=offer['departureDate'],
-                                           price=offer['price']['total']) }}" target="_blank">Click here to view the offer</a><br>
+                   origin=offer['origin'],
+                   destination=offer['destination'],
+                   departureDate=offer['departureDate'],
+                   price=offer['price']['total']) }}" target="_blank" style="color: rgb(4, 4, 212); font-weight: bold;">Click here to view the offer</a><br>
+
+
                     </p>                    
                 </li>
                 <hr>
@@ -90,7 +92,6 @@
             <ul>
                 {% for offer in flight_data_return %}
                 <li>
-                    <input type="radio" name="selected_offer_return" value="{{ loop.index0 }}" id="offerReturn{{ loop.index0 }}">
                     <p><strong>Origin:</strong> {{ offer['origin'] }}</p>
                     <strong>Departure Airport (Name):</strong> {{ departuresReturn[loop.index0] }}<br>
                     <p><strong>Destination:</strong> {{ offer['destination'] }}</p>
@@ -102,7 +103,7 @@
                                            origin=offer['origin'],
                                            destination=offer['destination'],
                                            departureDate=offer['departureDate'],
-                                           price=offer['price']['total']) }}" target="_blank">Click here to view the offer</a><br>
+                                           price=offer['price']['total']) }}" target="_blank" style="color: rgb(4, 4, 212); font-weight: bold;">Click here to view the offer</a><br>
                     </p> 
                 </li>
                 <hr>
