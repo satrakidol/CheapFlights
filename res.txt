@@ -3919,3 +3919,666 @@ WHERE airports.id = ?
 FROM airports 
 WHERE airports.id = ?
 2023-09-26 18:05:05,095 INFO sqlalchemy.engine.Engine [cached since 0.05285s ago] (1263,)
+Price:381.20
+2023-09-26 18:42:58,353 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2023-09-26 18:42:58,360 INFO sqlalchemy.engine.Engine SELECT airlines.id AS airlines_id, airlines.airline AS airlines_airline, airlines.codes AS airlines_codes 
+FROM airlines 
+WHERE airlines.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:42:58,361 INFO sqlalchemy.engine.Engine [generated in 0.00078s] ('TP', 1, 0)
+2023-09-26 18:42:58,370 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:42:58,370 INFO sqlalchemy.engine.Engine [cached since 2277s ago] ('JFK', 1, 0)
+2023-09-26 18:42:58,376 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:42:58,376 INFO sqlalchemy.engine.Engine [cached since 2277s ago] ('LHR', 1, 0)
+2023-09-26 18:42:58,381 INFO sqlalchemy.engine.Engine SELECT airlines.id AS airlines_id, airlines.airline AS airlines_airline, airlines.codes AS airlines_codes 
+FROM airlines 
+WHERE airlines.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:42:58,381 INFO sqlalchemy.engine.Engine [cached since 0.02117s ago] ('TP', 1, 0)
+2023-09-26 18:42:58,389 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:42:58,390 INFO sqlalchemy.engine.Engine [cached since 2277s ago] ('JFK', 1, 0)
+2023-09-26 18:42:58,395 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:42:58,395 INFO sqlalchemy.engine.Engine [cached since 2277s ago] ('LHR', 1, 0)
+2023-09-26 18:42:58,399 INFO sqlalchemy.engine.Engine SELECT airlines.id AS airlines_id, airlines.airline AS airlines_airline, airlines.codes AS airlines_codes 
+FROM airlines 
+WHERE airlines.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:42:58,400 INFO sqlalchemy.engine.Engine [cached since 0.03974s ago] ('TP', 1, 0)
+2023-09-26 18:42:58,405 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:42:58,405 INFO sqlalchemy.engine.Engine [cached since 2277s ago] ('JFK', 1, 0)
+2023-09-26 18:42:58,410 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:42:58,411 INFO sqlalchemy.engine.Engine [cached since 2277s ago] ('LHR', 1, 0)
+2023-09-26 18:42:58,415 INFO sqlalchemy.engine.Engine SELECT airlines.id AS airlines_id, airlines.airline AS airlines_airline, airlines.codes AS airlines_codes 
+FROM airlines 
+WHERE airlines.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:42:58,416 INFO sqlalchemy.engine.Engine [cached since 0.05584s ago] ('TP', 1, 0)
+2023-09-26 18:42:58,421 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:42:58,421 INFO sqlalchemy.engine.Engine [cached since 2277s ago] ('JFK', 1, 0)
+2023-09-26 18:42:58,426 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:42:58,426 INFO sqlalchemy.engine.Engine [cached since 2277s ago] ('LHR', 1, 0)
+2023-09-26 18:42:58,431 INFO sqlalchemy.engine.Engine SELECT airlines.id AS airlines_id, airlines.airline AS airlines_airline, airlines.codes AS airlines_codes 
+FROM airlines 
+WHERE airlines.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:42:58,432 INFO sqlalchemy.engine.Engine [cached since 0.07173s ago] ('TP', 1, 0)
+2023-09-26 18:42:58,441 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:42:58,441 INFO sqlalchemy.engine.Engine [cached since 2277s ago] ('JFK', 1, 0)
+2023-09-26 18:42:58,447 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:42:58,447 INFO sqlalchemy.engine.Engine [cached since 2277s ago] ('LHR', 1, 0)
+2023-09-26 18:42:58,452 INFO sqlalchemy.engine.Engine SELECT airlines.id AS airlines_id, airlines.airline AS airlines_airline, airlines.codes AS airlines_codes 
+FROM airlines 
+WHERE airlines.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:42:58,452 INFO sqlalchemy.engine.Engine [cached since 0.09205s ago] ('TP', 1, 0)
+2023-09-26 18:42:58,457 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:42:58,458 INFO sqlalchemy.engine.Engine [cached since 2277s ago] ('JFK', 1, 0)
+2023-09-26 18:42:58,463 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:42:58,463 INFO sqlalchemy.engine.Engine [cached since 2277s ago] ('LHR', 1, 0)
+2023-09-26 18:42:58,468 INFO sqlalchemy.engine.Engine SELECT airlines.id AS airlines_id, airlines.airline AS airlines_airline, airlines.codes AS airlines_codes 
+FROM airlines 
+WHERE airlines.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:42:58,468 INFO sqlalchemy.engine.Engine [cached since 0.1081s ago] ('VS', 1, 0)
+2023-09-26 18:42:58,473 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:42:58,473 INFO sqlalchemy.engine.Engine [cached since 2277s ago] ('JFK', 1, 0)
+2023-09-26 18:42:58,478 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:42:58,478 INFO sqlalchemy.engine.Engine [cached since 2277s ago] ('LHR', 1, 0)
+2023-09-26 18:42:58,483 INFO sqlalchemy.engine.Engine SELECT airlines.id AS airlines_id, airlines.airline AS airlines_airline, airlines.codes AS airlines_codes 
+FROM airlines 
+WHERE airlines.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:42:58,484 INFO sqlalchemy.engine.Engine [cached since 0.1237s ago] ('DL', 1, 0)
+2023-09-26 18:42:58,489 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:42:58,489 INFO sqlalchemy.engine.Engine [cached since 2277s ago] ('JFK', 1, 0)
+2023-09-26 18:42:58,494 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:42:58,494 INFO sqlalchemy.engine.Engine [cached since 2277s ago] ('LHR', 1, 0)
+2023-09-26 18:42:58,499 INFO sqlalchemy.engine.Engine SELECT airlines.id AS airlines_id, airlines.airline AS airlines_airline, airlines.codes AS airlines_codes 
+FROM airlines 
+WHERE airlines.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:42:58,500 INFO sqlalchemy.engine.Engine [cached since 0.1396s ago] ('DL', 1, 0)
+2023-09-26 18:42:58,505 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:42:58,505 INFO sqlalchemy.engine.Engine [cached since 2277s ago] ('JFK', 1, 0)
+2023-09-26 18:42:58,510 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:42:58,510 INFO sqlalchemy.engine.Engine [cached since 2277s ago] ('LHR', 1, 0)
+2023-09-26 18:42:58,515 INFO sqlalchemy.engine.Engine SELECT airlines.id AS airlines_id, airlines.airline AS airlines_airline, airlines.codes AS airlines_codes 
+FROM airlines 
+WHERE airlines.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:42:58,515 INFO sqlalchemy.engine.Engine [cached since 0.1554s ago] ('DL', 1, 0)
+2023-09-26 18:42:58,520 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:42:58,520 INFO sqlalchemy.engine.Engine [cached since 2277s ago] ('JFK', 1, 0)
+2023-09-26 18:42:58,537 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:42:58,538 INFO sqlalchemy.engine.Engine [cached since 2277s ago] ('LHR', 1, 0)
+Price:381.20
+2023-09-26 18:45:02,814 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2023-09-26 18:45:02,815 INFO sqlalchemy.engine.Engine SELECT airlines.id AS airlines_id, airlines.airline AS airlines_airline, airlines.codes AS airlines_codes 
+FROM airlines 
+WHERE airlines.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:45:02,817 INFO sqlalchemy.engine.Engine [cached since 124.5s ago] ('TP', 1, 0)
+2023-09-26 18:45:02,824 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:45:02,825 INFO sqlalchemy.engine.Engine [cached since 2401s ago] ('JFK', 1, 0)
+2023-09-26 18:45:02,830 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:45:02,830 INFO sqlalchemy.engine.Engine [cached since 2401s ago] ('LHR', 1, 0)
+2023-09-26 18:45:02,836 INFO sqlalchemy.engine.Engine SELECT airlines.id AS airlines_id, airlines.airline AS airlines_airline, airlines.codes AS airlines_codes 
+FROM airlines 
+WHERE airlines.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:45:02,837 INFO sqlalchemy.engine.Engine [cached since 124.5s ago] ('TP', 1, 0)
+2023-09-26 18:45:02,842 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:45:02,843 INFO sqlalchemy.engine.Engine [cached since 2401s ago] ('JFK', 1, 0)
+2023-09-26 18:45:02,848 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:45:02,849 INFO sqlalchemy.engine.Engine [cached since 2401s ago] ('LHR', 1, 0)
+2023-09-26 18:45:02,854 INFO sqlalchemy.engine.Engine SELECT airlines.id AS airlines_id, airlines.airline AS airlines_airline, airlines.codes AS airlines_codes 
+FROM airlines 
+WHERE airlines.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:45:02,855 INFO sqlalchemy.engine.Engine [cached since 124.5s ago] ('TP', 1, 0)
+2023-09-26 18:45:02,861 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:45:02,861 INFO sqlalchemy.engine.Engine [cached since 2401s ago] ('JFK', 1, 0)
+2023-09-26 18:45:02,866 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:45:02,867 INFO sqlalchemy.engine.Engine [cached since 2401s ago] ('LHR', 1, 0)
+2023-09-26 18:45:02,872 INFO sqlalchemy.engine.Engine SELECT airlines.id AS airlines_id, airlines.airline AS airlines_airline, airlines.codes AS airlines_codes 
+FROM airlines 
+WHERE airlines.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:45:02,873 INFO sqlalchemy.engine.Engine [cached since 124.5s ago] ('TP', 1, 0)
+2023-09-26 18:45:02,878 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:45:02,878 INFO sqlalchemy.engine.Engine [cached since 2401s ago] ('JFK', 1, 0)
+2023-09-26 18:45:02,882 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:45:02,883 INFO sqlalchemy.engine.Engine [cached since 2401s ago] ('LHR', 1, 0)
+2023-09-26 18:45:02,887 INFO sqlalchemy.engine.Engine SELECT airlines.id AS airlines_id, airlines.airline AS airlines_airline, airlines.codes AS airlines_codes 
+FROM airlines 
+WHERE airlines.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:45:02,888 INFO sqlalchemy.engine.Engine [cached since 124.5s ago] ('TP', 1, 0)
+2023-09-26 18:45:02,893 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:45:02,893 INFO sqlalchemy.engine.Engine [cached since 2401s ago] ('JFK', 1, 0)
+2023-09-26 18:45:02,900 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:45:02,902 INFO sqlalchemy.engine.Engine [cached since 2401s ago] ('LHR', 1, 0)
+2023-09-26 18:45:02,906 INFO sqlalchemy.engine.Engine SELECT airlines.id AS airlines_id, airlines.airline AS airlines_airline, airlines.codes AS airlines_codes 
+FROM airlines 
+WHERE airlines.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:45:02,907 INFO sqlalchemy.engine.Engine [cached since 124.5s ago] ('TP', 1, 0)
+2023-09-26 18:45:02,911 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:45:02,912 INFO sqlalchemy.engine.Engine [cached since 2401s ago] ('JFK', 1, 0)
+2023-09-26 18:45:02,916 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:45:02,917 INFO sqlalchemy.engine.Engine [cached since 2401s ago] ('LHR', 1, 0)
+2023-09-26 18:45:02,921 INFO sqlalchemy.engine.Engine SELECT airlines.id AS airlines_id, airlines.airline AS airlines_airline, airlines.codes AS airlines_codes 
+FROM airlines 
+WHERE airlines.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:45:02,922 INFO sqlalchemy.engine.Engine [cached since 124.6s ago] ('VS', 1, 0)
+2023-09-26 18:45:02,927 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:45:02,927 INFO sqlalchemy.engine.Engine [cached since 2401s ago] ('JFK', 1, 0)
+2023-09-26 18:45:02,932 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:45:02,932 INFO sqlalchemy.engine.Engine [cached since 2401s ago] ('LHR', 1, 0)
+2023-09-26 18:45:02,937 INFO sqlalchemy.engine.Engine SELECT airlines.id AS airlines_id, airlines.airline AS airlines_airline, airlines.codes AS airlines_codes 
+FROM airlines 
+WHERE airlines.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:45:02,938 INFO sqlalchemy.engine.Engine [cached since 124.6s ago] ('DL', 1, 0)
+2023-09-26 18:45:02,943 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:45:02,944 INFO sqlalchemy.engine.Engine [cached since 2401s ago] ('JFK', 1, 0)
+2023-09-26 18:45:02,949 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:45:02,949 INFO sqlalchemy.engine.Engine [cached since 2401s ago] ('LHR', 1, 0)
+2023-09-26 18:45:02,955 INFO sqlalchemy.engine.Engine SELECT airlines.id AS airlines_id, airlines.airline AS airlines_airline, airlines.codes AS airlines_codes 
+FROM airlines 
+WHERE airlines.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:45:02,956 INFO sqlalchemy.engine.Engine [cached since 124.6s ago] ('DL', 1, 0)
+2023-09-26 18:45:02,961 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:45:02,962 INFO sqlalchemy.engine.Engine [cached since 2401s ago] ('JFK', 1, 0)
+2023-09-26 18:45:02,967 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:45:02,968 INFO sqlalchemy.engine.Engine [cached since 2401s ago] ('LHR', 1, 0)
+2023-09-26 18:45:02,976 INFO sqlalchemy.engine.Engine SELECT airlines.id AS airlines_id, airlines.airline AS airlines_airline, airlines.codes AS airlines_codes 
+FROM airlines 
+WHERE airlines.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:45:02,977 INFO sqlalchemy.engine.Engine [cached since 124.6s ago] ('DL', 1, 0)
+2023-09-26 18:45:02,982 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:45:02,983 INFO sqlalchemy.engine.Engine [cached since 2401s ago] ('JFK', 1, 0)
+2023-09-26 18:45:02,988 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:45:02,988 INFO sqlalchemy.engine.Engine [cached since 2401s ago] ('LHR', 1, 0)
+Price:None
+destination from form :London
+2023-09-26 18:49:07,373 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2023-09-26 18:49:07,375 INFO sqlalchemy.engine.Engine SELECT cities.id AS cities_id, cities.codes AS cities_codes, cities.city AS cities_city, cities.country AS cities_country 
+FROM cities 
+WHERE cities.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:49:07,376 INFO sqlalchemy.engine.Engine [cached since 5703s ago] ('New York', 1, 0)
+2023-09-26 18:49:07,383 INFO sqlalchemy.engine.Engine SELECT cities.codes AS cities_codes 
+FROM cities 
+WHERE cities.city = ?
+2023-09-26 18:49:07,383 INFO sqlalchemy.engine.Engine [cached since 5703s ago] ('New York',)
+2023-09-26 18:49:07,388 INFO sqlalchemy.engine.Engine SELECT cities.id AS cities_id, cities.codes AS cities_codes, cities.city AS cities_city, cities.country AS cities_country 
+FROM cities 
+WHERE cities.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:49:07,389 INFO sqlalchemy.engine.Engine [cached since 5703s ago] ('London', 1, 0)
+2023-09-26 18:49:07,393 INFO sqlalchemy.engine.Engine SELECT cities.codes AS cities_codes 
+FROM cities 
+WHERE cities.city = ?
+2023-09-26 18:49:07,394 INFO sqlalchemy.engine.Engine [cached since 5703s ago] ('London',)
+checkDestinationCode :None
+destination :LON
+departure:NYC
+Type of departure:<class 'str'>
+destination:LON
+Type of destination:<class 'str'>
+<amadeus.client.response.Response object at 0x7f3f2e0a9f60>
+RESPONSE: [{'type': 'flight-offer', 'id': '1', 'source': 'GDS', 'instantTicketingRequired': False, 'nonHomogeneous': False, 'oneWay': False, 'lastTicketingDate': '2023-09-27', 'lastTicketingDateTime': '2023-09-27', 'numberOfBookableSeats': 9, 'itineraries': [{'duration': 'PT16H30M', 'segments': [{'departure': {'iataCode': 'EWR', 'terminal': 'B', 'at': '2023-10-10T22:50:00'}, 'arrival': {'iataCode': 'OPO', 'at': '2023-10-11T10:35:00'}, 'carrierCode': 'TP', 'number': '212', 'aircraft': {'code': '32Q'}, 'operating': {'carrierCode': 'TP'}, 'duration': 'PT6H45M', 'id': '9', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'OPO', 'at': '2023-10-11T18:05:00'}, 'arrival': {'iataCode': 'LGW', 'terminal': 'S', 'at': '2023-10-11T20:20:00'}, 'carrierCode': 'TP', 'number': '1332', 'aircraft': {'code': '320'}, 'operating': {'carrierCode': 'TP'}, 'duration': 'PT2H15M', 'id': '10', 'numberOfStops': 0, 'blacklistedInEU': False}]}], 'price': {'currency': 'EUR', 'total': '236.08', 'base': '50.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '236.08', 'additionalServices': [{'amount': '75.00', 'type': 'CHECKED_BAGS'}]}, 'pricingOptions': {'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}, 'validatingAirlineCodes': ['TP'], 'travelerPricings': [{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'EUR', 'total': '236.08', 'base': '50.00'}, 'fareDetailsBySegment': [{'segmentId': '9', 'cabin': 'ECONOMY', 'fareBasis': 'UL0DSI03', 'brandedFare': 'DISCOUNT', 'class': 'U', 'includedCheckedBags': {'quantity': 0}}, {'segmentId': '10', 'cabin': 'ECONOMY', 'fareBasis': 'UL0DSI03', 'brandedFare': 'DISCOUNT', 'class': 'U', 'includedCheckedBags': {'quantity': 0}}]}]}, {'type': 'flight-offer', 'id': '2', 'source': 'GDS', 'instantTicketingRequired': False, 'nonHomogeneous': False, 'oneWay': False, 'lastTicketingDate': '2023-09-27', 'lastTicketingDateTime': '2023-09-27', 'numberOfBookableSeats': 9, 'itineraries': [{'duration': 'PT12H30M', 'segments': [{'departure': {'iataCode': 'JFK', 'terminal': '1', 'at': '2023-10-10T22:05:00'}, 'arrival': {'iataCode': 'LIS', 'terminal': '1', 'at': '2023-10-11T10:00:00'}, 'carrierCode': 'TP', 'number': '208', 'aircraft': {'code': '339'}, 'operating': {'carrierCode': 'TP'}, 'duration': 'PT6H55M', 'id': '7', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'LIS', 'terminal': '1', 'at': '2023-10-11T12:55:00'}, 'arrival': {'iataCode': 'LGW', 'terminal': 'S', 'at': '2023-10-11T15:35:00'}, 'carrierCode': 'TP', 'number': '1336', 'aircraft': {'code': 'E90'}, 'operating': {'carrierCode': 'NI'}, 'duration': 'PT2H40M', 'id': '8', 'numberOfStops': 0, 'blacklistedInEU': False}]}], 'price': {'currency': 'EUR', 'total': '242.78', 'base': '50.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '242.78', 'additionalServices': [{'amount': '75.00', 'type': 'CHECKED_BAGS'}]}, 'pricingOptions': {'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}, 'validatingAirlineCodes': ['TP'], 'travelerPricings': [{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'EUR', 'total': '242.78', 'base': '50.00'}, 'fareDetailsBySegment': [{'segmentId': '7', 'cabin': 'ECONOMY', 'fareBasis': 'UL0DSI03', 'brandedFare': 'DISCOUNT', 'class': 'U', 'includedCheckedBags': {'quantity': 0}}, {'segmentId': '8', 'cabin': 'ECONOMY', 'fareBasis': 'UL0DSI03', 'brandedFare': 'DISCOUNT', 'class': 'U', 'includedCheckedBags': {'quantity': 0}}]}]}, {'type': 'flight-offer', 'id': '3', 'source': 'GDS', 'instantTicketingRequired': False, 'nonHomogeneous': False, 'oneWay': False, 'lastTicketingDate': '2023-09-27', 'lastTicketingDateTime': '2023-09-27', 'numberOfBookableSeats': 9, 'itineraries': [{'duration': 'PT11H40M', 'segments': [{'departure': {'iataCode': 'EWR', 'terminal': 'B', 'at': '2023-10-10T17:40:00'}, 'arrival': {'iataCode': 'LIS', 'terminal': '1', 'at': '2023-10-11T05:30:00'}, 'carrierCode': 'TP', 'number': '202', 'aircraft': {'code': '32Q'}, 'operating': {'carrierCode': 'TP'}, 'duration': 'PT6H50M', 'id': '11', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'LIS', 'terminal': '1', 'at': '2023-10-11T07:40:00'}, 'arrival': {'iataCode': 'LHR', 'terminal': '2', 'at': '2023-10-11T10:20:00'}, 'carrierCode': 'TP', 'number': '1356', 'aircraft': {'code': '32Q'}, 'operating': {'carrierCode': 'TP'}, 'duration': 'PT2H40M', 'id': '12', 'numberOfStops': 0, 'blacklistedInEU': False}]}], 'price': {'currency': 'EUR', 'total': '303.78', 'base': '111.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '303.78', 'additionalServices': [{'amount': '75.00', 'type': 'CHECKED_BAGS'}]}, 'pricingOptions': {'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}, 'validatingAirlineCodes': ['TP'], 'travelerPricings': [{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'EUR', 'total': '303.78', 'base': '111.00'}, 'fareDetailsBySegment': [{'segmentId': '11', 'cabin': 'ECONOMY', 'fareBasis': 'KL0DSI03', 'brandedFare': 'DISCOUNT', 'class': 'K', 'includedCheckedBags': {'quantity': 0}}, {'segmentId': '12', 'cabin': 'ECONOMY', 'fareBasis': 'KL0DSI03', 'brandedFare': 'DISCOUNT', 'class': 'K', 'includedCheckedBags': {'quantity': 0}}]}]}, {'type': 'flight-offer', 'id': '4', 'source': 'GDS', 'instantTicketingRequired': False, 'nonHomogeneous': False, 'oneWay': False, 'lastTicketingDate': '2023-09-27', 'lastTicketingDateTime': '2023-09-27', 'numberOfBookableSeats': 9, 'itineraries': [{'duration': 'PT13H45M', 'segments': [{'departure': {'iataCode': 'EWR', 'terminal': 'B', 'at': '2023-10-10T23:00:00'}, 'arrival': {'iataCode': 'LIS', 'terminal': '1', 'at': '2023-10-11T10:50:00'}, 'carrierCode': 'TP', 'number': '204', 'aircraft': {'code': '32Q'}, 'operating': {'carrierCode': 'TP'}, 'duration': 'PT6H50M', 'id': '15', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'LIS', 'terminal': '1', 'at': '2023-10-11T15:05:00'}, 'arrival': {'iataCode': 'LHR', 'terminal': '2', 'at': '2023-10-11T17:45:00'}, 'carrierCode': 'TP', 'number': '1350', 'aircraft': {'code': '32Q'}, 'operating': {'carrierCode': 'TP'}, 'duration': 'PT2H40M', 'id': '16', 'numberOfStops': 0, 'blacklistedInEU': False}]}], 'price': {'currency': 'EUR', 'total': '303.78', 'base': '111.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '303.78', 'additionalServices': [{'amount': '75.00', 'type': 'CHECKED_BAGS'}]}, 'pricingOptions': {'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}, 'validatingAirlineCodes': ['TP'], 'travelerPricings': [{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'EUR', 'total': '303.78', 'base': '111.00'}, 'fareDetailsBySegment': [{'segmentId': '15', 'cabin': 'ECONOMY', 'fareBasis': 'KL0DSI03', 'brandedFare': 'DISCOUNT', 'class': 'K', 'includedCheckedBags': {'quantity': 0}}, {'segmentId': '16', 'cabin': 'ECONOMY', 'fareBasis': 'KL0DSI03', 'brandedFare': 'DISCOUNT', 'class': 'K', 'includedCheckedBags': {'quantity': 0}}]}]}, {'type': 'flight-offer', 'id': '5', 'source': 'GDS', 'instantTicketingRequired': False, 'nonHomogeneous': False, 'oneWay': False, 'lastTicketingDate': '2023-09-27', 'lastTicketingDateTime': '2023-09-27', 'numberOfBookableSeats': 9, 'itineraries': [{'duration': 'PT14H5M', 'segments': [{'departure': {'iataCode': 'EWR', 'terminal': 'B', 'at': '2023-10-10T17:40:00'}, 'arrival': {'iataCode': 'LIS', 'terminal': '1', 'at': '2023-10-11T05:30:00'}, 'carrierCode': 'TP', 'number': '202', 'aircraft': {'code': '32Q'}, 'operating': {'carrierCode': 'TP'}, 'duration': 'PT6H50M', 'id': '1', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'LIS', 'terminal': '1', 'at': '2023-10-11T10:05:00'}, 'arrival': {'iataCode': 'LHR', 'terminal': '2', 'at': '2023-10-11T12:45:00'}, 'carrierCode': 'TP', 'number': '1352', 'aircraft': {'code': '32N'}, 'operating': {'carrierCode': 'TP'}, 'duration': 'PT2H40M', 'id': '2', 'numberOfStops': 0, 'blacklistedInEU': False}]}], 'price': {'currency': 'EUR', 'total': '303.78', 'base': '111.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '303.78', 'additionalServices': [{'amount': '75.00', 'type': 'CHECKED_BAGS'}]}, 'pricingOptions': {'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}, 'validatingAirlineCodes': ['TP'], 'travelerPricings': [{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'EUR', 'total': '303.78', 'base': '111.00'}, 'fareDetailsBySegment': [{'segmentId': '1', 'cabin': 'ECONOMY', 'fareBasis': 'KL0DSI03', 'brandedFare': 'DISCOUNT', 'class': 'K', 'includedCheckedBags': {'quantity': 0}}, {'segmentId': '2', 'cabin': 'ECONOMY', 'fareBasis': 'KL0DSI03', 'brandedFare': 'DISCOUNT', 'class': 'K', 'includedCheckedBags': {'quantity': 0}}]}]}, {'type': 'flight-offer', 'id': '6', 'source': 'GDS', 'instantTicketingRequired': False, 'nonHomogeneous': False, 'oneWay': False, 'lastTicketingDate': '2023-09-27', 'lastTicketingDateTime': '2023-09-27', 'numberOfBookableSeats': 9, 'itineraries': [{'duration': 'PT14H50M', 'segments': [{'departure': {'iataCode': 'EWR', 'terminal': 'B', 'at': '2023-10-10T23:00:00'}, 'arrival': {'iataCode': 'LIS', 'terminal': '1', 'at': '2023-10-11T10:50:00'}, 'carrierCode': 'TP', 'number': '204', 'aircraft': {'code': '32Q'}, 'operating': {'carrierCode': 'TP'}, 'duration': 'PT6H50M', 'id': '19', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'LIS', 'terminal': '1', 'at': '2023-10-11T16:10:00'}, 'arrival': {'iataCode': 'LHR', 'terminal': '2', 'at': '2023-10-11T18:50:00'}, 'carrierCode': 'TP', 'number': '1364', 'aircraft': {'code': '32N'}, 'operating': {'carrierCode': 'TP'}, 'duration': 'PT2H40M', 'id': '20', 'numberOfStops': 0, 'blacklistedInEU': False}]}], 'price': {'currency': 'EUR', 'total': '303.78', 'base': '111.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '303.78', 'additionalServices': [{'amount': '75.00', 'type': 'CHECKED_BAGS'}]}, 'pricingOptions': {'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}, 'validatingAirlineCodes': ['TP'], 'travelerPricings': [{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'EUR', 'total': '303.78', 'base': '111.00'}, 'fareDetailsBySegment': [{'segmentId': '19', 'cabin': 'ECONOMY', 'fareBasis': 'KL0DSI03', 'brandedFare': 'DISCOUNT', 'class': 'K', 'includedCheckedBags': {'quantity': 0}}, {'segmentId': '20', 'cabin': 'ECONOMY', 'fareBasis': 'KL0DSI03', 'brandedFare': 'DISCOUNT', 'class': 'K', 'includedCheckedBags': {'quantity': 0}}]}]}, {'type': 'flight-offer', 'id': '7', 'source': 'GDS', 'instantTicketingRequired': False, 'nonHomogeneous': False, 'oneWay': False, 'lastTicketingDate': '2023-09-27', 'lastTicketingDateTime': '2023-09-27', 'numberOfBookableSeats': 9, 'itineraries': [{'duration': 'PT14H40M', 'segments': [{'departure': {'iataCode': 'JFK', 'terminal': '1', 'at': '2023-10-10T22:05:00'}, 'arrival': {'iataCode': 'LIS', 'terminal': '1', 'at': '2023-10-11T10:00:00'}, 'carrierCode': 'TP', 'number': '208', 'aircraft': {'code': '339'}, 'operating': {'carrierCode': 'TP'}, 'duration': 'PT6H55M', 'id': '13', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'LIS', 'terminal': '1', 'at': '2023-10-11T15:05:00'}, 'arrival': {'iataCode': 'LHR', 'terminal': '2', 'at': '2023-10-11T17:45:00'}, 'carrierCode': 'TP', 'number': '1350', 'aircraft': {'code': '32Q'}, 'operating': {'carrierCode': 'TP'}, 'duration': 'PT2H40M', 'id': '14', 'numberOfStops': 0, 'blacklistedInEU': False}]}], 'price': {'currency': 'EUR', 'total': '303.78', 'base': '111.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '303.78', 'additionalServices': [{'amount': '75.00', 'type': 'CHECKED_BAGS'}]}, 'pricingOptions': {'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}, 'validatingAirlineCodes': ['TP'], 'travelerPricings': [{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'EUR', 'total': '303.78', 'base': '111.00'}, 'fareDetailsBySegment': [{'segmentId': '13', 'cabin': 'ECONOMY', 'fareBasis': 'KL0DSI03', 'brandedFare': 'DISCOUNT', 'class': 'K', 'includedCheckedBags': {'quantity': 0}}, {'segmentId': '14', 'cabin': 'ECONOMY', 'fareBasis': 'KL0DSI03', 'brandedFare': 'DISCOUNT', 'class': 'K', 'includedCheckedBags': {'quantity': 0}}]}]}, {'type': 'flight-offer', 'id': '8', 'source': 'GDS', 'instantTicketingRequired': False, 'nonHomogeneous': False, 'oneWay': False, 'lastTicketingDate': '2023-09-27', 'lastTicketingDateTime': '2023-09-27', 'numberOfBookableSeats': 9, 'itineraries': [{'duration': 'PT15H45M', 'segments': [{'departure': {'iataCode': 'JFK', 'terminal': '1', 'at': '2023-10-10T22:05:00'}, 'arrival': {'iataCode': 'LIS', 'terminal': '1', 'at': '2023-10-11T10:00:00'}, 'carrierCode': 'TP', 'number': '208', 'aircraft': {'code': '339'}, 'operating': {'carrierCode': 'TP'}, 'duration': 'PT6H55M', 'id': '17', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'LIS', 'terminal': '1', 'at': '2023-10-11T16:10:00'}, 'arrival': {'iataCode': 'LHR', 'terminal': '2', 'at': '2023-10-11T18:50:00'}, 'carrierCode': 'TP', 'number': '1364', 'aircraft': {'code': '32N'}, 'operating': {'carrierCode': 'TP'}, 'duration': 'PT2H40M', 'id': '18', 'numberOfStops': 0, 'blacklistedInEU': False}]}], 'price': {'currency': 'EUR', 'total': '303.78', 'base': '111.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '303.78', 'additionalServices': [{'amount': '75.00', 'type': 'CHECKED_BAGS'}]}, 'pricingOptions': {'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}, 'validatingAirlineCodes': ['TP'], 'travelerPricings': [{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'EUR', 'total': '303.78', 'base': '111.00'}, 'fareDetailsBySegment': [{'segmentId': '17', 'cabin': 'ECONOMY', 'fareBasis': 'KL0DSI03', 'brandedFare': 'DISCOUNT', 'class': 'K', 'includedCheckedBags': {'quantity': 0}}, {'segmentId': '18', 'cabin': 'ECONOMY', 'fareBasis': 'KL0DSI03', 'brandedFare': 'DISCOUNT', 'class': 'K', 'includedCheckedBags': {'quantity': 0}}]}]}, {'type': 'flight-offer', 'id': '9', 'source': 'GDS', 'instantTicketingRequired': False, 'nonHomogeneous': False, 'oneWay': False, 'lastTicketingDate': '2023-09-27', 'lastTicketingDateTime': '2023-09-27', 'numberOfBookableSeats': 9, 'itineraries': [{'duration': 'PT10H15M', 'segments': [{'departure': {'iataCode': 'EWR', 'terminal': 'B', 'at': '2023-10-10T20:30:00'}, 'arrival': {'iataCode': 'KEF', 'at': '2023-10-11T06:15:00'}, 'carrierCode': 'FI', 'number': '622', 'aircraft': {'code': '7M9'}, 'operating': {'carrierCode': 'FI'}, 'duration': 'PT5H45M', 'id': '3', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'KEF', 'at': '2023-10-11T07:45:00'}, 'arrival': {'iataCode': 'LGW', 'terminal': 'N', 'at': '2023-10-11T11:45:00'}, 'carrierCode': 'FI', 'number': '470', 'aircraft': {'code': '7M8'}, 'operating': {'carrierCode': 'FI'}, 'duration': 'PT3H', 'id': '4', 'numberOfStops': 0, 'blacklistedInEU': False}]}], 'price': {'currency': 'EUR', 'total': '375.65', 'base': '212.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '375.65', 'additionalServices': [{'amount': '71.00', 'type': 'CHECKED_BAGS'}]}, 'pricingOptions': {'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}, 'validatingAirlineCodes': ['FI'], 'travelerPricings': [{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'EUR', 'total': '375.65', 'base': '212.00'}, 'fareDetailsBySegment': [{'segmentId': '3', 'cabin': 'ECONOMY', 'fareBasis': 'VJ1QUSLT', 'brandedFare': 'LIGHT', 'class': 'V', 'includedCheckedBags': {'quantity': 0}}, {'segmentId': '4', 'cabin': 'ECONOMY', 'fareBasis': 'VJ1QUSLT', 'brandedFare': 'LIGHT', 'class': 'V', 'includedCheckedBags': {'quantity': 0}}]}]}, {'type': 'flight-offer', 'id': '10', 'source': 'GDS', 'instantTicketingRequired': False, 'nonHomogeneous': False, 'oneWay': False, 'lastTicketingDate': '2023-09-27', 'lastTicketingDateTime': '2023-09-27', 'numberOfBookableSeats': 9, 'itineraries': [{'duration': 'PT10H25M', 'segments': [{'departure': {'iataCode': 'EWR', 'terminal': 'B', 'at': '2023-10-10T20:30:00'}, 'arrival': {'iataCode': 'KEF', 'at': '2023-10-11T06:15:00'}, 'carrierCode': 'FI', 'number': '622', 'aircraft': {'code': '7M9'}, 'operating': {'carrierCode': 'FI'}, 'duration': 'PT5H45M', 'id': '5', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'KEF', 'at': '2023-10-11T07:40:00'}, 'arrival': {'iataCode': 'LHR', 'terminal': '2', 'at': '2023-10-11T11:55:00'}, 'carrierCode': 'FI', 'number': '450', 'aircraft': {'code': '76W'}, 'operating': {'carrierCode': 'FI'}, 'duration': 'PT3H15M', 'id': '6', 'numberOfStops': 0, 'blacklistedInEU': False}]}], 'price': {'currency': 'EUR', 'total': '375.65', 'base': '212.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '375.65', 'additionalServices': [{'amount': '71.00', 'type': 'CHECKED_BAGS'}]}, 'pricingOptions': {'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}, 'validatingAirlineCodes': ['FI'], 'travelerPricings': [{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'EUR', 'total': '375.65', 'base': '212.00'}, 'fareDetailsBySegment': [{'segmentId': '5', 'cabin': 'ECONOMY', 'fareBasis': 'VJ1QUSLT', 'brandedFare': 'LIGHT', 'class': 'V', 'includedCheckedBags': {'quantity': 0}}, {'segmentId': '6', 'cabin': 'ECONOMY', 'fareBasis': 'VJ1QUSLT', 'brandedFare': 'LIGHT', 'class': 'V', 'includedCheckedBags': {'quantity': 0}}]}]}]
+2023-09-26 18:49:13,940 INFO sqlalchemy.engine.Engine SELECT airlines.id AS airlines_id, airlines.airline AS airlines_airline, airlines.codes AS airlines_codes 
+FROM airlines 
+WHERE airlines.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:49:13,941 INFO sqlalchemy.engine.Engine [cached since 375.6s ago] ('TP', 1, 0)
+2023-09-26 18:49:13,949 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:49:13,949 INFO sqlalchemy.engine.Engine [cached since 2652s ago] ('EWR', 1, 0)
+2023-09-26 18:49:13,954 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:49:13,954 INFO sqlalchemy.engine.Engine [cached since 2652s ago] ('LGW', 1, 0)
+2023-09-26 18:49:13,959 INFO sqlalchemy.engine.Engine SELECT airlines.id AS airlines_id, airlines.airline AS airlines_airline, airlines.codes AS airlines_codes 
+FROM airlines 
+WHERE airlines.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:49:13,959 INFO sqlalchemy.engine.Engine [cached since 375.6s ago] ('TP', 1, 0)
+2023-09-26 18:49:13,964 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:49:13,964 INFO sqlalchemy.engine.Engine [cached since 2652s ago] ('JFK', 1, 0)
+2023-09-26 18:49:13,969 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:49:13,970 INFO sqlalchemy.engine.Engine [cached since 2652s ago] ('LGW', 1, 0)
+2023-09-26 18:49:13,974 INFO sqlalchemy.engine.Engine SELECT airlines.id AS airlines_id, airlines.airline AS airlines_airline, airlines.codes AS airlines_codes 
+FROM airlines 
+WHERE airlines.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:49:13,975 INFO sqlalchemy.engine.Engine [cached since 375.6s ago] ('TP', 1, 0)
+2023-09-26 18:49:13,979 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:49:13,980 INFO sqlalchemy.engine.Engine [cached since 2652s ago] ('EWR', 1, 0)
+2023-09-26 18:49:13,984 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:49:13,985 INFO sqlalchemy.engine.Engine [cached since 2652s ago] ('LHR', 1, 0)
+2023-09-26 18:49:13,989 INFO sqlalchemy.engine.Engine SELECT airlines.id AS airlines_id, airlines.airline AS airlines_airline, airlines.codes AS airlines_codes 
+FROM airlines 
+WHERE airlines.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:49:13,990 INFO sqlalchemy.engine.Engine [cached since 375.6s ago] ('TP', 1, 0)
+2023-09-26 18:49:13,994 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:49:13,994 INFO sqlalchemy.engine.Engine [cached since 2652s ago] ('EWR', 1, 0)
+2023-09-26 18:49:13,998 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:49:13,999 INFO sqlalchemy.engine.Engine [cached since 2652s ago] ('LHR', 1, 0)
+2023-09-26 18:49:14,003 INFO sqlalchemy.engine.Engine SELECT airlines.id AS airlines_id, airlines.airline AS airlines_airline, airlines.codes AS airlines_codes 
+FROM airlines 
+WHERE airlines.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:49:14,004 INFO sqlalchemy.engine.Engine [cached since 375.6s ago] ('TP', 1, 0)
+2023-09-26 18:49:14,008 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:49:14,009 INFO sqlalchemy.engine.Engine [cached since 2652s ago] ('EWR', 1, 0)
+2023-09-26 18:49:14,013 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:49:14,014 INFO sqlalchemy.engine.Engine [cached since 2652s ago] ('LHR', 1, 0)
+2023-09-26 18:49:14,018 INFO sqlalchemy.engine.Engine SELECT airlines.id AS airlines_id, airlines.airline AS airlines_airline, airlines.codes AS airlines_codes 
+FROM airlines 
+WHERE airlines.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:49:14,018 INFO sqlalchemy.engine.Engine [cached since 375.7s ago] ('TP', 1, 0)
+2023-09-26 18:49:14,024 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:49:14,025 INFO sqlalchemy.engine.Engine [cached since 2652s ago] ('EWR', 1, 0)
+2023-09-26 18:49:14,030 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:49:14,030 INFO sqlalchemy.engine.Engine [cached since 2652s ago] ('LHR', 1, 0)
+2023-09-26 18:49:14,035 INFO sqlalchemy.engine.Engine SELECT airlines.id AS airlines_id, airlines.airline AS airlines_airline, airlines.codes AS airlines_codes 
+FROM airlines 
+WHERE airlines.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:49:14,035 INFO sqlalchemy.engine.Engine [cached since 375.7s ago] ('TP', 1, 0)
+2023-09-26 18:49:14,039 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:49:14,040 INFO sqlalchemy.engine.Engine [cached since 2652s ago] ('JFK', 1, 0)
+2023-09-26 18:49:14,044 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:49:14,044 INFO sqlalchemy.engine.Engine [cached since 2652s ago] ('LHR', 1, 0)
+2023-09-26 18:49:14,049 INFO sqlalchemy.engine.Engine SELECT airlines.id AS airlines_id, airlines.airline AS airlines_airline, airlines.codes AS airlines_codes 
+FROM airlines 
+WHERE airlines.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:49:14,049 INFO sqlalchemy.engine.Engine [cached since 375.7s ago] ('TP', 1, 0)
+2023-09-26 18:49:14,054 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:49:14,054 INFO sqlalchemy.engine.Engine [cached since 2652s ago] ('JFK', 1, 0)
+2023-09-26 18:49:14,059 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:49:14,059 INFO sqlalchemy.engine.Engine [cached since 2652s ago] ('LHR', 1, 0)
+2023-09-26 18:49:14,064 INFO sqlalchemy.engine.Engine SELECT airlines.id AS airlines_id, airlines.airline AS airlines_airline, airlines.codes AS airlines_codes 
+FROM airlines 
+WHERE airlines.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:49:14,064 INFO sqlalchemy.engine.Engine [cached since 375.7s ago] ('FI', 1, 0)
+2023-09-26 18:49:14,069 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:49:14,069 INFO sqlalchemy.engine.Engine [cached since 2652s ago] ('EWR', 1, 0)
+2023-09-26 18:49:14,074 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:49:14,074 INFO sqlalchemy.engine.Engine [cached since 2652s ago] ('LGW', 1, 0)
+2023-09-26 18:49:14,079 INFO sqlalchemy.engine.Engine SELECT airlines.id AS airlines_id, airlines.airline AS airlines_airline, airlines.codes AS airlines_codes 
+FROM airlines 
+WHERE airlines.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:49:14,079 INFO sqlalchemy.engine.Engine [cached since 375.7s ago] ('FI', 1, 0)
+2023-09-26 18:49:14,083 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:49:14,084 INFO sqlalchemy.engine.Engine [cached since 2652s ago] ('EWR', 1, 0)
+2023-09-26 18:49:14,088 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:49:14,089 INFO sqlalchemy.engine.Engine [cached since 2652s ago] ('LHR', 1, 0)
+Carrier Code: TP
+2023-09-26 18:49:14,094 INFO sqlalchemy.engine.Engine SELECT airlines.id AS airlines_id, airlines.airline AS airlines_airline, airlines.codes AS airlines_codes 
+FROM airlines 
+WHERE airlines.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:49:14,094 INFO sqlalchemy.engine.Engine [cached since 375.7s ago] ('TP', 1, 0)
+Airline from Database: TAP Air Portugal
+price: 294.37
+2023-09-26 18:49:14,099 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:49:14,100 INFO sqlalchemy.engine.Engine [cached since 2652s ago] ('LGW', 1, 0)
+2023-09-26 18:49:14,105 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:49:14,106 INFO sqlalchemy.engine.Engine [cached since 2652s ago] ('EWR', 1, 0)
+Carrier Code: TP
+2023-09-26 18:49:14,110 INFO sqlalchemy.engine.Engine SELECT airlines.id AS airlines_id, airlines.airline AS airlines_airline, airlines.codes AS airlines_codes 
+FROM airlines 
+WHERE airlines.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:49:14,111 INFO sqlalchemy.engine.Engine [cached since 375.8s ago] ('TP', 1, 0)
+Airline from Database: TAP Air Portugal
+price: 301.07
+2023-09-26 18:49:14,116 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:49:14,116 INFO sqlalchemy.engine.Engine [cached since 2652s ago] ('LGW', 1, 0)
+2023-09-26 18:49:14,121 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:49:14,121 INFO sqlalchemy.engine.Engine [cached since 2652s ago] ('JFK', 1, 0)
+Carrier Code: B6
+2023-09-26 18:49:14,126 INFO sqlalchemy.engine.Engine SELECT airlines.id AS airlines_id, airlines.airline AS airlines_airline, airlines.codes AS airlines_codes 
+FROM airlines 
+WHERE airlines.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:49:14,126 INFO sqlalchemy.engine.Engine [cached since 375.8s ago] ('B6', 1, 0)
+Airline from Database: None
+price: 461.50
+2023-09-26 18:49:14,131 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:49:14,131 INFO sqlalchemy.engine.Engine [cached since 2652s ago] ('LHR', 1, 0)
+2023-09-26 18:49:14,136 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:49:14,136 INFO sqlalchemy.engine.Engine [cached since 2652s ago] ('LGA', 1, 0)
+Carrier Code: TP
+2023-09-26 18:49:14,141 INFO sqlalchemy.engine.Engine SELECT airlines.id AS airlines_id, airlines.airline AS airlines_airline, airlines.codes AS airlines_codes 
+FROM airlines 
+WHERE airlines.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:49:14,141 INFO sqlalchemy.engine.Engine [cached since 375.8s ago] ('TP', 1, 0)
+Airline from Database: TAP Air Portugal
+price: 514.16
+2023-09-26 18:49:14,146 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:49:14,146 INFO sqlalchemy.engine.Engine [cached since 2652s ago] ('LHR', 1, 0)
+2023-09-26 18:49:14,151 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:49:14,151 INFO sqlalchemy.engine.Engine [cached since 2652s ago] ('EWR', 1, 0)
+Carrier Code: TP
+2023-09-26 18:49:14,156 INFO sqlalchemy.engine.Engine SELECT airlines.id AS airlines_id, airlines.airline AS airlines_airline, airlines.codes AS airlines_codes 
+FROM airlines 
+WHERE airlines.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:49:14,156 INFO sqlalchemy.engine.Engine [cached since 375.8s ago] ('TP', 1, 0)
+Airline from Database: TAP Air Portugal
+price: 514.16
+2023-09-26 18:49:14,161 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:49:14,161 INFO sqlalchemy.engine.Engine [cached since 2652s ago] ('LHR', 1, 0)
+2023-09-26 18:49:14,166 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:49:14,166 INFO sqlalchemy.engine.Engine [cached since 2652s ago] ('EWR', 1, 0)
+Carrier Code: TP
+2023-09-26 18:49:14,170 INFO sqlalchemy.engine.Engine SELECT airlines.id AS airlines_id, airlines.airline AS airlines_airline, airlines.codes AS airlines_codes 
+FROM airlines 
+WHERE airlines.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:49:14,171 INFO sqlalchemy.engine.Engine [cached since 375.8s ago] ('TP', 1, 0)
+Airline from Database: TAP Air Portugal
+price: 514.16
+2023-09-26 18:49:14,175 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:49:14,175 INFO sqlalchemy.engine.Engine [cached since 2652s ago] ('LHR', 1, 0)
+2023-09-26 18:49:14,180 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:49:14,180 INFO sqlalchemy.engine.Engine [cached since 2652s ago] ('EWR', 1, 0)
+Carrier Code: TP
+2023-09-26 18:49:14,185 INFO sqlalchemy.engine.Engine SELECT airlines.id AS airlines_id, airlines.airline AS airlines_airline, airlines.codes AS airlines_codes 
+FROM airlines 
+WHERE airlines.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:49:14,185 INFO sqlalchemy.engine.Engine [cached since 375.8s ago] ('TP', 1, 0)
+Airline from Database: TAP Air Portugal
+price: 514.16
+2023-09-26 18:49:14,190 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:49:14,190 INFO sqlalchemy.engine.Engine [cached since 2652s ago] ('LHR', 1, 0)
+2023-09-26 18:49:14,195 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:49:14,195 INFO sqlalchemy.engine.Engine [cached since 2652s ago] ('EWR', 1, 0)
+Carrier Code: TP
+2023-09-26 18:49:14,200 INFO sqlalchemy.engine.Engine SELECT airlines.id AS airlines_id, airlines.airline AS airlines_airline, airlines.codes AS airlines_codes 
+FROM airlines 
+WHERE airlines.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:49:14,200 INFO sqlalchemy.engine.Engine [cached since 375.8s ago] ('TP', 1, 0)
+Airline from Database: TAP Air Portugal
+price: 514.16
+2023-09-26 18:49:14,205 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:49:14,206 INFO sqlalchemy.engine.Engine [cached since 2652s ago] ('LHR', 1, 0)
+2023-09-26 18:49:14,210 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:49:14,211 INFO sqlalchemy.engine.Engine [cached since 2652s ago] ('EWR', 1, 0)
+Carrier Code: TP
+2023-09-26 18:49:14,215 INFO sqlalchemy.engine.Engine SELECT airlines.id AS airlines_id, airlines.airline AS airlines_airline, airlines.codes AS airlines_codes 
+FROM airlines 
+WHERE airlines.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:49:14,216 INFO sqlalchemy.engine.Engine [cached since 375.9s ago] ('TP', 1, 0)
+Airline from Database: TAP Air Portugal
+price: 514.16
+2023-09-26 18:49:14,222 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:49:14,223 INFO sqlalchemy.engine.Engine [cached since 2652s ago] ('LHR', 1, 0)
+2023-09-26 18:49:14,227 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:49:14,227 INFO sqlalchemy.engine.Engine [cached since 2652s ago] ('EWR', 1, 0)
+Carrier Code: TP
+2023-09-26 18:49:14,232 INFO sqlalchemy.engine.Engine SELECT airlines.id AS airlines_id, airlines.airline AS airlines_airline, airlines.codes AS airlines_codes 
+FROM airlines 
+WHERE airlines.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:49:14,232 INFO sqlalchemy.engine.Engine [cached since 375.9s ago] ('TP', 1, 0)
+Airline from Database: TAP Air Portugal
+price: 514.16
+2023-09-26 18:49:14,237 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:49:14,237 INFO sqlalchemy.engine.Engine [cached since 2652s ago] ('LHR', 1, 0)
+2023-09-26 18:49:14,242 INFO sqlalchemy.engine.Engine SELECT airports.id AS airports_id, airports.codes AS airports_codes, airports.airport AS airports_airport 
+FROM airports 
+WHERE airports.codes = ?
+ LIMIT ? OFFSET ?
+2023-09-26 18:49:14,242 INFO sqlalchemy.engine.Engine [cached since 2652s ago] ('JFK', 1, 0)

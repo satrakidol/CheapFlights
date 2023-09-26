@@ -95,10 +95,12 @@
                     <strong>One Way:</strong> {{ offer['oneWay'] }}<br>
                     <strong>Last Ticketing Date:</strong> {{ offer['lastTicketingDate'] }}<br>
                     <strong>Validating Airline Codes:</strong> {{ offer['validatingAirlineCodes']|join(', ') }}<br>
+                    {% if request.method == 'POST'%}
                     <div class="radio-container">
                         <label for="offer{{ loop.index0 }}" class="radio-label">Select Flight</label>
                         <input type="radio" name="selected_offer_outgoing" value="{{ loop.index0 }}" id="offer{{ loop.index0 }}">
                     </div><br>
+                    {%endif%}
                 </li>
                 <hr>
                 {% endfor %}
