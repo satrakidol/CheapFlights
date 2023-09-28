@@ -20,6 +20,7 @@ from . database import db_session, init_db
 from datetime import date
 # import datetime
 from datetime import datetime, timedelta
+from celery import shared_task
 
 
 
@@ -538,4 +539,14 @@ def total():
 #             selected_outgoing_flight=selected_outgoing_flight, 
 #             selected_return_flight=selected_return_flight)
 
-    
+
+@shared_task(ignore_result=False)
+def add_together(a: int, b: int) -> int:
+    return a + b
+
+@main.post("/add")
+def start_add() -> dict[str, object]:
+    a = request.form.get("a", type=int)
+    b = request.form.get("b", type=int)
+    result = add_together.delay(a, b)
+    return {"result_id": result.id}
