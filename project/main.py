@@ -21,6 +21,8 @@ from datetime import date
 # import datetime
 from datetime import datetime, timedelta
 
+
+
 main = Blueprint('main', __name__)
 
 amadeus = Client(
