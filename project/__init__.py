@@ -4,6 +4,7 @@ from flask_login import LoginManager
 import os
 from dotenv import load_dotenv
 from celery import Celery, Task
+from celery.schedules import crontab
 
 # init SQLAlchemy so we can use it later in our models
 db = SQLAlchemy()
