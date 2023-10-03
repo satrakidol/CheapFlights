@@ -18,5 +18,9 @@ CELERYBEAT_SCHEDULE = {
         'task': 'project.tasks.print_hello',
         # Every minute
         'schedule': crontab(minute="*"),
+    },
+    'email': {
+    'task':'project.tasks.email',
+    'schedule': crontab(minute="*"),
     }
 }

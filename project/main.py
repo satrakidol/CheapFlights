@@ -21,6 +21,8 @@ from datetime import date
 # import datetime
 from datetime import datetime, timedelta
 # from celery import shared_task, task
+from flask_mail import Mail, Message
+from . import mail
 
 
 
@@ -31,9 +33,29 @@ amadeus = Client(
     client_secret= os.getenv('Amadeus_client_secret')
 )
 
+
+
+# mail = Mail() 
+
+# maria = 'bbbbb'
+
+# @main.route('/email')
+# def email():
+#     message = Message(
+#         subject = "Hey Test",
+#         recipients = ['ap22017@hua.gr'],
+#         sender='ap22017@hua.gr'
+#     )
+#     message.body = maria
+#     mail.send(message)
+
+#     return "sent"
+
 @main.route('/')
 def index():
     return render_template('index.html')
+
+
 
 @main.route('/profile')
 @login_required

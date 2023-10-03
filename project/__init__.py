@@ -5,6 +5,7 @@ import os
 from dotenv import load_dotenv
 from celery import Celery, Task
 from celery.schedules import crontab
+from flask_mail import Mail, Message
 
 # init SQLAlchemy so we can use it later in our models
 db = SQLAlchemy()
@@ -25,6 +26,7 @@ def celery_init_app(app: Flask) -> Celery:
 def create_app():
     app = Flask(__name__)
 
+    #Celery
     app.config.from_mapping(
         CELERY=dict(
             broker_url="redis://localhost:6379/0",
@@ -35,10 +37,20 @@ def create_app():
     app.config.from_prefixed_env()
     celery_init_app(app)
 
-
+    #Database
     app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite'
     app.config['SECRET_KEY'] = 'SECRET_KEY'
     # app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DBURL')
+
+    #Email
+    app.config['MAIL_SERVER']='sandbox.smtp.mailtrap.io'
+    app.config['MAIL_PORT'] = 2525
+    app.config['MAIL_USERNAME'] = '29d982c335cfe7'
+    app.config['MAIL_PASSWORD'] = '6c73e952f1b209'
+    app.config['MAIL_USE_TLS'] = True
+    app.config['MAIL_USE_SSL'] = False
+
+    mail = Mail(app)
 
     db.init_app(app)
 
