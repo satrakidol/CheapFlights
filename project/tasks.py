@@ -127,7 +127,7 @@ def email():
                 recipients = ['ap22017@hua.gr'],
                 sender='CheapFlights',
             )
-            message.body = f'The new price is {new_priceGo}'
+            message.body = f'Hello,\n\nThe new price for your trip from {origin} to {destination} is {new_priceGo} '
             mail.send(message)
 
         except ResponseError as error:

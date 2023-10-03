@@ -3,30 +3,3 @@ connection_string = sqlite:///instance/db.sqlite
 sqlite:///instance/db.sqlite
  * Serving Flask app 'project'
  * Debug mode: on
-/home/SMB/ap22017/cheapFlights/CheapFlights/project/.env
-connection_string = sqlite:///instance/db.sqlite
-sqlite:///instance/db.sqlite
-/home/SMB/ap22017/cheapFlights/CheapFlights/project/.env
-connection_string = sqlite:///instance/db.sqlite
-sqlite:///instance/db.sqlite
-/home/SMB/ap22017/cheapFlights/CheapFlights/project/.env
-connection_string = sqlite:///instance/db.sqlite
-sqlite:///instance/db.sqlite
-/home/SMB/ap22017/cheapFlights/CheapFlights/project/.env
-connection_string = sqlite:///instance/db.sqlite
-sqlite:///instance/db.sqlite
-/home/SMB/ap22017/cheapFlights/CheapFlights/project/.env
-connection_string = sqlite:///instance/db.sqlite
-sqlite:///instance/db.sqlite
-/home/SMB/ap22017/cheapFlights/CheapFlights/project/.env
-connection_string = sqlite:///instance/db.sqlite
-sqlite:///instance/db.sqlite
-/home/SMB/ap22017/cheapFlights/CheapFlights/project/.env
-connection_string = sqlite:///instance/db.sqlite
-sqlite:///instance/db.sqlite
-/home/SMB/ap22017/cheapFlights/CheapFlights/project/.env
-connection_string = sqlite:///instance/db.sqlite
-sqlite:///instance/db.sqlite
-/home/SMB/ap22017/cheapFlights/CheapFlights/project/.env
-connection_string = sqlite:///instance/db.sqlite
-sqlite:///instance/db.sqlite
