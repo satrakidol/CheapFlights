@@ -33,7 +33,11 @@ amadeus = Client(
     client_secret= os.getenv('Amadeus_client_secret')
 )
 
-
+def clean_string(input_string):
+    # Remove parentheses, commas, square brackets, and single quotes
+    input_string = str(input_string)
+    cleaned_string = input_string.replace("(", "").replace(")", "").replace(",", "").replace("[", "").replace("]", "").replace("'", "")
+    return cleaned_string
 
 # mail = Mail() 
 
@@ -141,8 +145,9 @@ def get_flight_price():
 
         if not checkDepartureCode:
             departure = db_session.query(Cities.codes).filter(Cities.city == departure).all()
-            departure = str(departure)
-            departure=departure.replace("(", "").replace(")", "").replace("," , "").replace("[" , "").replace("]" , "").replace("'" , "")
+            # departure = str(departure)
+            # departure=departure.replace("(", "").replace(")", "").replace("," , "").replace("[" , "").replace("]" , "").replace("'" , "")
+            departure = clean_string(departure)
 
         checkDestinationCode = db_session.query(Cities).filter(Cities.codes == destination).first()
 

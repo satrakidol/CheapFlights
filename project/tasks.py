@@ -1,19 +1,16 @@
 from project.make_celery import celery_app as celery
 from flask_mail import Mail, Message
-from . models import Notification
+from . models import Notification, Cities
 from . database import db_session
 from . main import datetime,date
 from amadeus import Client, ResponseError
 from . config import Amadeus_client_id, Amadeus_client_secret, SECRET_KEY
-from . main import amadeus
+from . main import amadeus, clean_string
 
 @celery.task()
 def print_hello():
     print("Hello from task")
 
-
-
-maria = 'kor'
 
 @celery.task()
 def email():
@@ -89,11 +86,16 @@ def email():
             for offer in flight_data:
                 new_priceGo = float(offer['price']['total'])
                 print(f"new_price is: {new_priceGo}")
-                if new_priceGo < priceGo:
+                if new_priceGo < priceGo or new_priceGo == priceGo or new_priceGo > priceGo:
+                    #delete afterwards the 2 ors above
                     notification_to_update = db_session.query(Notification).filter_by(notificationID=notificationID).first()
-                    notification_to_update.priceGo = new_price
+                    notification_to_update.priceGo = new_priceGo
                     # Commit the changes to the database
                     db_session.commit()
+                    originTranslated = db_session.query(Cities.city).filter(Cities.codes == origin).all()
+                    originTranslated = clean_string(originTranslated)
+                    destinationTranslated = db_session.query(Cities.city).filter(Cities.codes == destination).all()
+                    destinationTranslated = clean_string(destinationTranslated)
                     #SENT EMAIL
                 else:
                     print("old priceGo is higher")
@@ -104,9 +106,10 @@ def email():
 
             for offer in flight_data_return:
                 new_priceReturn = float(offer['price']['total'])
-                if new_priceReturn < priceReturn:
+                if new_priceReturn < priceGo or new_priceReturn == priceReturn or new_priceReturn > priceReturn:
+                    #delete afterwards the 2 ors above
                     notification_to_update = db_session.query(Notification).filter_by(notificationID=notificationID).first()
-                    notification_to_update.priceReturn = new_price
+                    notification_to_update.priceReturn = new_priceReturn
                     # Commit the changes to the database
                     db_session.commit()
                     #SENT EMAIL
@@ -127,7 +130,7 @@ def email():
                 recipients = ['ap22017@hua.gr'],
                 sender='CheapFlights',
             )
-            message.body = f'Hello,\n\nThe new price for your trip from {origin} to {destination} is {new_priceGo} '
+            message.body = f'Hello,\n\nThe new price for your trip from {originTranslated} to {destinationTranslated} is {new_priceGo} '
             mail.send(message)
 
         except ResponseError as error:
