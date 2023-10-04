@@ -57,10 +57,12 @@
 
 <h1 style="font-size: x-large; font-weight: bold;">Cheapest dates to travel</h1>
 <table>
+    {% if flight_data_return %}
     <tr>
         <th style="color: white; text-align: center;">Outgoing</th>
         <th style="color: white; text-align: center;">Return</th>
     </tr>
+    {% endif %}
     <tr>
         <td>
             {% if flight_data %}

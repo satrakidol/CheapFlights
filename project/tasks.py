@@ -147,6 +147,15 @@ def email():
                 notification_to_update.priceReturn = new_priceReturn
                 # Commit the changes to the database
                 db_session.commit()
+
+                userIDTranslated = (
+                        db_session.query(User.name).filter(User.id == Notification.userID)).first()
+                userIDTranslated = clean_string(userIDTranslated)
+
+
+                userEmail = (
+                        db_session.query(User.email).filter(User.id == Notification.userID)).first()[0]
+
                 message = Message(
                 subject = "New cheaper flight for your destination",
                 recipients = [userEmail],
