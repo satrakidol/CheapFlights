@@ -340,33 +340,11 @@ def get_cheapest_dates():
             flight_data = response.data  
             flight_data_return = response_return.data
 
-            # # Retrieve the access token from the client
-            # access_token = amadeus.access_token
-
-            # # Create the Authorization header with the access token
-            # headers = {
-            #     'Authorization': f'Bearer {access_token}'
-            # }
-
-            # # Make a request with the correct headers
-            # authenticated_link = requests.get(flight_offer_url, headers=headers)
-
-            # # Now 'response_with_headers' contains the response from the URL with the correct headers
-            # print("Response with Headers:", authenticated_link.text)
-
             import pprint
             # pprint.pprint(response)
             print(f'RESPONSE: {response.data}')
             # print(f'RESPONSE: {response.json}')
-            # {{ offer['price']['total'] }} {{ offer['price']['currency'] }}
 
-
-            ####APO EDO####
-            # carrier_code2 = flight_data['itineraries'][0]['segments'][0]['carrierCode']
-            # airline2=db_session.query(Airlines).filter(Airlines.codes == carrier_code2).first()
-            # print(f"Carrier Code: {carrier_code2}")
-            # print(f"Airline from Database: {airline2}")
-            #### OS EDO####
             airlines = []
             airlinesReturn = []
             departures = []
