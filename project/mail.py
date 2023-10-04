@@ -1,4 +1,4 @@
-from flask_mail import Mail, Message
+# from flask_mail import Mail, Message
 
 # app.config.update(
 # MAIL_SERVER=os.environ.get('MAIL_SERVER'),

@@ -3962,3 +3962,63 @@ WHERE cities.codes = ?
 FROM cities 
 WHERE cities.city = ?
 2023-10-04 16:43:08,362 INFO sqlalchemy.engine.Engine [cached since 51.6s ago] ('London',)
+checkDestinationCode :None
+destination :LON
+departureDate :2024-01-19,2023-12-25
+departure:NYC
+Type of departure:<class 'str'>
+destination:LON
+Type of destination:<class 'str'>
+Amadeus API Error: [400]
+[departureDate] Invalid departure dates range
+/home/SMB/ap22017/cheapFlights/CheapFlights/project/.env
+connection_string = sqlite:///instance/db.sqlite
+sqlite:///instance/db.sqlite
+/home/SMB/ap22017/cheapFlights/CheapFlights/project/.env
+connection_string = sqlite:///instance/db.sqlite
+sqlite:///instance/db.sqlite
+/home/SMB/ap22017/cheapFlights/CheapFlights/project/.env
+connection_string = sqlite:///instance/db.sqlite
+sqlite:///instance/db.sqlite
+/home/SMB/ap22017/cheapFlights/CheapFlights/project/.env
+connection_string = sqlite:///instance/db.sqlite
+sqlite:///instance/db.sqlite
+/home/SMB/ap22017/cheapFlights/CheapFlights/project/.env
+connection_string = sqlite:///instance/db.sqlite
+sqlite:///instance/db.sqlite
+/home/SMB/ap22017/cheapFlights/CheapFlights/project/.env
+connection_string = sqlite:///instance/db.sqlite
+sqlite:///instance/db.sqlite
+/home/SMB/ap22017/cheapFlights/CheapFlights/project/.env
+connection_string = sqlite:///instance/db.sqlite
+sqlite:///instance/db.sqlite
+/home/SMB/ap22017/cheapFlights/CheapFlights/project/.env
+connection_string = sqlite:///instance/db.sqlite
+sqlite:///instance/db.sqlite
+/home/SMB/ap22017/cheapFlights/CheapFlights/project/.env
+connection_string = sqlite:///instance/db.sqlite
+sqlite:///instance/db.sqlite
+/home/SMB/ap22017/cheapFlights/CheapFlights/project/.env
+connection_string = sqlite:///instance/db.sqlite
+sqlite:///instance/db.sqlite
+/home/SMB/ap22017/cheapFlights/CheapFlights/project/.env
+connection_string = sqlite:///instance/db.sqlite
+sqlite:///instance/db.sqlite
+/home/SMB/ap22017/cheapFlights/CheapFlights/project/.env
+connection_string = sqlite:///instance/db.sqlite
+sqlite:///instance/db.sqlite
+/home/SMB/ap22017/cheapFlights/CheapFlights/project/.env
+connection_string = sqlite:///instance/db.sqlite
+sqlite:///instance/db.sqlite
+/home/SMB/ap22017/cheapFlights/CheapFlights/project/.env
+connection_string = sqlite:///instance/db.sqlite
+sqlite:///instance/db.sqlite
+/home/SMB/ap22017/cheapFlights/CheapFlights/project/.env
+connection_string = sqlite:///instance/db.sqlite
+sqlite:///instance/db.sqlite
+/home/SMB/ap22017/cheapFlights/CheapFlights/project/.env
+connection_string = sqlite:///instance/db.sqlite
+sqlite:///instance/db.sqlite
+/home/SMB/ap22017/cheapFlights/CheapFlights/project/.env
+connection_string = sqlite:///instance/db.sqlite
+sqlite:///instance/db.sqlite

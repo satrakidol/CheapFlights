@@ -104,12 +104,12 @@ def email():
 
 
                 userIDTranslated = (
-                        db_session.query(User.name).filter(User.id == Notification.userID)).first()
+                        db_session.query(User.name).filter(User.id == userID)).first()
                 userIDTranslated = clean_string(userIDTranslated)
 
 
                 userEmail = (
-                        db_session.query(User.email).filter(User.id == Notification.userID)).first()[0]
+                        db_session.query(User.email).filter(User.id == userID)).first()[0]
 
                 print(f"userIDTranslated: {userIDTranslated}")
                 print(f"userEmail: {userEmail}")
@@ -149,19 +149,19 @@ def email():
                 db_session.commit()
 
                 userIDTranslated = (
-                        db_session.query(User.name).filter(User.id == Notification.userID)).first()
+                        db_session.query(User.name).filter(User.id == userID)).first()
                 userIDTranslated = clean_string(userIDTranslated)
 
 
                 userEmail = (
-                        db_session.query(User.email).filter(User.id == Notification.userID)).first()[0]
+                        db_session.query(User.email).filter(User.id == userID)).first()[0]
 
                 message = Message(
                 subject = "New cheaper flight for your destination",
                 recipients = [userEmail],
                 sender='CheapFlights',
             )
-                message.body = f'Hello {userIDTranslated},\n\nThe new price for your trip from {originTranslated} to {destinationTranslated} is {new_priceGo} '
+                message.body = f'Hello {userIDTranslated},\n\nThe new price for your trip from {destinationTranslated} to {originTranslated} is {new_priceReturn} '
                 mail.send(message)
             else:
                 print("old priceReturn is higher")
