@@ -1,11 +1,12 @@
 from project.make_celery import celery_app as celery
 from flask_mail import Mail, Message
-from . models import Notification, Cities
+from . models import Notification, Cities, User
 from . database import db_session
 from . main import datetime,date
 from amadeus import Client, ResponseError
 from . config import Amadeus_client_id, Amadeus_client_secret, SECRET_KEY
 from . main import amadeus, clean_string
+
 
 @celery.task()
 def print_hello():
@@ -92,6 +93,19 @@ def email():
                     notification_to_update.priceGo = new_priceGo
                     # Commit the changes to the database
                     db_session.commit()
+
+
+                    userIDTranslated = (
+                            db_session.query(User.name).filter(User.id == Notification.userID)).first()
+                    userIDTranslated = clean_string(userIDTranslated)
+
+
+                    userEmail = (
+                            db_session.query(User.email).filter(User.id == Notification.userID)).first()[0]
+
+                    print(f"userEmail: {userEmail}")
+
+
                     originTranslated = db_session.query(Cities.city).filter(Cities.codes == origin).all()
                     originTranslated = clean_string(originTranslated)
                     destinationTranslated = db_session.query(Cities.city).filter(Cities.codes == destination).all()
@@ -99,7 +113,7 @@ def email():
                     #SENT EMAIL
                 else:
                     print("old priceGo is higher")
-                #prices are comming sorted, so we need only 1 iteration
+                #prices are coming sorted, so we need only 1 iteration
                 break
 
 
@@ -118,25 +132,13 @@ def email():
                 break
 
 
-
-            print(f"flight_data: {flight_data}")
-            print(f"flight_data_return: {flight_data_return}")
-
-
-
-
             message = Message(
                 subject = "New cheaper flight for your destination",
-                recipients = ['ap22017@hua.gr'],
+                recipients = [userEmail],
                 sender='CheapFlights',
             )
-            message.body = f'Hello,\n\nThe new price for your trip from {originTranslated} to {destinationTranslated} is {new_priceGo} '
+            message.body = f'Hello {userIDTranslated},\n\nThe new price for your trip from {originTranslated} to {destinationTranslated} is {new_priceGo} '
             mail.send(message)
 
         except ResponseError as error:
             return 
-        #     print(f"Amadeus API Error: {error}")
-        # return render_template('show_results_cheapest_date.html', error=f"Failed to fetch data: {str(error)}", new_price=new_price)
-            
-
-    # return "sent"
